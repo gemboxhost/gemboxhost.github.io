@@ -8,8 +8,7 @@ color:#FFFFFF;
 background-size:cover;
 }
  button {
-            
-            border: 2px solid black;
+            border: 2px solid white;
             border-radius: 10px;
             width: 170px;
             height: 40px;           
@@ -17,14 +16,12 @@ background-size:cover;
             padding: 1px;
             margin: 1px;
             color: white;
-            box-shadow: 0 5px 20px 0 white;
-            background:rgba(0,0,0,0.5);
+            background:white;
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
+            box-shadow: 0 0px 20px 0 white;
             color: white;
             border-radius: 10px;
-            background-color: green;
 }
 header{
 	height: 3em;
