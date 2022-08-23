@@ -1048,10 +1048,10 @@ function stage2_() {
  };
  function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="PS4 Exploited And GoldHEN v2.3.b2 Loaded";
+ msgs.innerHTML="PS4 Exploited dan GoldHEN v2.3b2 Berhasil";
 }
  function awaitpl(){
-  msgs.innerHTML="GoldHEN Already Loaded & BinLoader Ready,<br>Send A Payload To Port 9020 Now";
+  msgs.innerHTML="GoldHEN sudah terinstall & BinLoader siap,<br>Terima kasih sudah berlangganan di Magnum Game";
  }
  function runPayload(path) {
   var req = new XMLHttpRequest();
