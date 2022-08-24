@@ -39,7 +39,7 @@ function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);to
 
 function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="Exploit dan GoldHEN v2.3b2 Berhasil";
+ msgs.innerHTML="Exploit 9.00 dan GoldHEN v2.3b2 Berhasil";
 }
 
 function awaitpl() {
