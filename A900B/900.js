@@ -39,7 +39,7 @@ function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);to
 
 function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="PS4 Exploited dan GoldHEN v2.3b2 Berhasil";
+ msgs.innerHTML="Exploit dan GoldHEN v2.3b2 Berhasil";
 }
 
 function awaitpl() {
@@ -711,7 +711,7 @@ function kernelExploit() {
    chain.run();
    return;
   }
-  alert("Kernel Exploit Failed! Reboot and Try Again.");
+  alert("Kernel Exploit Gagal! Restart dan coba lagi.");
   p.write8(0, 0);
   return;
  };
