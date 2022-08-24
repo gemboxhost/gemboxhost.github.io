@@ -1048,7 +1048,7 @@ function stage2_() {
  };
  function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="PS4 Exploited dan GoldHEN v2.3b2 Berhasil";
+ msgs.innerHTML="Exploit 5.05 dan GoldHEN v2.3b2 Berhasil";
 }
  function awaitpl(){
   msgs.innerHTML="GoldHEN sudah terinstall & BinLoader siap,<br>Terima kasih sudah berlangganan di Magnum Game";
