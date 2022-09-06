@@ -1,5 +1,5 @@
 # Firmware compatible :
-    * 5.05 / 6.72 / 9.00
+    * 5.05 / 6.72 / 7.02 / 7.55 / 9.00
     
 # Payloads :
     * GoldHen by SiSTRo
