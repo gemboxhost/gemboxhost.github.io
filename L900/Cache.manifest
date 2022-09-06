@@ -1,0 +1,36 @@
+CACHE MANIFEST 
+
+CACHE:
+favicon.ico
+CopyCH.bin.bz2
+disableupdates.bin.bz2
+enablebrowser.bin.bz2
+enableupdates.bin.bz2
+exploit.js
+frontend.js
+goldhen_2.2.2_900.bin
+historyblocker.bin.bz2
+index.html
+int64b.js
+malloc.js
+mira.js
+mira2.js
+MiraLoader.bin.bz2
+MiraLoader.js
+netcat.js
+Orbis-Toolbox-900.bin.bz2
+payload.js
+pl_EnableUpdates.bin.bz2
+relocator.js
+ropb2.js
+syscalls.js
+syscalls2.js
+todex-disable.bin.bz2
+todex-enable.bin.bz2
+ToDex.bin.bz2
+wtsb.bin
+
+NETWORK: 
+* 
+
+# Date: 2022-05-21T14:59:00Z:
