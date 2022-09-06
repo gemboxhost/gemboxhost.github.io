@@ -9,9 +9,9 @@ background-size:cover;
 }
 button {
             
-            border: 2px solid white;
+            border: 3px solid #e2a110;
             border-radius: 10px;
-			width: 250px;
+	    width: 250px;
             height: 45px;            
             text-align: center;
             padding: 1px;
