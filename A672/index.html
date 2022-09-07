@@ -1,0 +1,38 @@
+<html manifest="672.cache">
+<head>
+<title>SiSTRo Auto 6.72 FW</title>
+<style>
+body{background-color:black;color:#CFB53B;font-size:28px;text-align:center;}
+.info{position:relative;top:50%;}
+.bottopmsg{position:absolute;bottom:20px;width:1500px;padding:5px 0 1px 0;}
+</style>
+<script>
+window.applicationCache.oncached=function(e){localStorage.cached="yes";setTimeout(loadScript,500);};
+</script>
+</head>
+<body onload="if(localStorage.cached=='yes')setTimeout(loadScript,500);">
+<br>
+<div class=IMG><img src="hen.png">
+<br><br><br>
+<div id="msgs" class="info">Menjalankan Exploit 6.72 dan GoldHEN v2.2.3 ... Mohon tunggu</div>
+<div id=bottommsg class="msgs bottopmsg">Magnum Game Gorontalo<br>Perumahan Griya Dulomo Indah, Kota Gorontalo<br><br>Thanks to: Leeful - ctn123 - Shinigami - Specter - ChendoChap - Sleirsgoevy - Prb</div>
+<script>
+function allset(){
+ localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
+ msgs.innerHTML="Exploit 6.72 dan GoldHEN v2.2.3 Berhasil";
+}
+function awaitpl(){
+  msgs.innerHTML="GoldHEN sudah terinstall & BinLoader siap,<br>Terima kasih sudah berlangganan di Magnum Game";
+}
+function pldone(){
+  msgs.innerHTML="Payload Loaded";
+}
+function loadScript(){
+ var xhr = new XMLHttpRequest();
+ xhr.open('GET','672.js',false);
+ xhr.send('');
+ eval.call(top.window, xhr.responseText);
+}
+</script>
+</body>
+</html>
