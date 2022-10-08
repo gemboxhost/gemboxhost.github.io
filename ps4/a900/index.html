@@ -54,7 +54,7 @@ background-size:cover;
   border-radius:10px;
   animation:hue 5s linear infinite;
   -webkit-animation: hue 5s linear infinite;
-  box-shadow: 0px 0px 50px yellow;
+  box-shadow: 0px 0px 10px yellow;
   color:white;
   background:rgba(255,255,0,0.4);
  }
@@ -68,31 +68,31 @@ background-size:cover;
  -webkit-filter:hue-rotate(0deg);
  }
  10%{
- box-shadow: 0px 1px 50px yellow;
+ box-shadow: 0px 1px 10px yellow;
  }
  20%{
- box-shadow: 1px 1px 50px yellow;
+ box-shadow: 1px 1px 10px yellow;
  }
  30%{
- box-shadow: 1px 0px 50px yellow;
+ box-shadow: 1px 0px 10px yellow;
  }
  40%{
-  box-shadow: 1px -1px 50px yellow;
+  box-shadow: 1px -1px 10px yellow;
  }
  50%{
- box-shadow: 0px -1px 50px yellow;
+ box-shadow: 0px -1px 10px yellow;
  }
  60%{
- box-shadow: -1px -1px 50px yellow;
+ box-shadow: -1px -1px 10px yellow;
  }
  70%{
- box-shadow: -1px 0px 50px yellow;
+ box-shadow: -1px 0px 10px yellow;
  }
  80%{
- box-shadow: -1px 1px 50px yellow;
+ box-shadow: -1px 1px 10px yellow;
  }
  90%{
- box-shadow: 0px 1px 50px yellow;
+ box-shadow: 0px 1px 10px yellow;
  }
  100%{
  filter:hue-rotate(360deg);
@@ -228,20 +228,20 @@ window.progress.innerHTML= LoadedMSG
 }
 
 function goldhen224(){
-    progress.innerHTML="Goldhen 2.2.4 loading... please wait";
-    LoadedMSG="GoldHEN 2.2.4 Loaded";
-    PLfile = "goldhen_2.2.4_900.bin";
+    progress.innerHTML="Goldhen 2.2.5b2 loading..,.. please wait";
+    LoadedMSG="GoldHEN 2.2.5b2 Loaded";
+    PLfile = "goldhen_2.2.5b2_900.bin";
     setTimeout(loadBIN,50);
 }
 </script>
 </head>
 <body onload="if(localStorage.cachedG=='yes')setTimeout(poc,50);" style='background-color:black;background-image: url("hen.jpg");background-position: center;background-repeat: no-repeat;background-size: cover;'>
-<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;margin-top:1%;'>Host Auto GoldHen v2.2.4 9.00fw</h1>
-<h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Jailbreaking....Please wait</h1>
+<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;margin-top:1%;'>Host Auto GoldHen v2.2.5b2 9.00fw</h1>
+<h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Jailbreaking..,.. Please wait</h1>
 <div class="content" >
  	    <div class="text" >
- 	        <br><span style="text-shadow: 4px 4px 4px black;" class="yellow" >Host by :</span >&nbsp;&nbsp; <span style="text-shadow: 4px 4px 4px black;" class="hue" >Magnum Game</span>
- 	        <br><br><br><br><span style="text-shadow: 4px 4px 4px black;" class="yellow" >Super Special Thanks To :</span >&nbsp;&nbsp; <a style="font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;">Karo , Sleirsgoevy , Al Azif , ChendoChap , SiSTRo ,Specter ,Znullptr ... </a>
+ 	        <br><span style="text-shadow: 4px 4px 4px black;" class="yellow" >Host by :</span >&nbsp;&nbsp; <span style="text-shadow: 4px 4px 4px black;" class="hue" >MAGNUM GAME GORONTALO</span>
+ 	        <br><br><br><br><span style="text-shadow: 4px 4px 4px black;" class="yellow" >Thanks To :</span >&nbsp;&nbsp; <a style="font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;">SiSTRo, Karo, Sleirsgoevy, Al Azif, ChendoChap, Specter, Znullptr ... </a>
 	    </div>
 </div>
 <script>
@@ -891,7 +891,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("Insert USB Drive and click OK after You See The Popup Notification, after jailbreak remove usb from PS4");
+  alert("Masukkan Flashdisk, Pilih OK setelah muncul Notifikasi USB");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -915,12 +915,12 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            alert("Jailbreak done. Remove USB Drive from PS4");
+            alert("Jailbreak berhasil, cabut Flashdisk dari PS4");
             setTimeout(jbdone, 50);
         }
         else
         {
-            alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
+            alert("Gagal memicu Exploit, restart PS4 anda dan coba lagi");
             p.write8(0, 0);
         }
  };
