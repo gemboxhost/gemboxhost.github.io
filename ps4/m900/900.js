@@ -44,7 +44,7 @@ function allset(){
 }
 
 function awaitpl() {
- msgs.innerHTML="GoldHEN sudah berhasil, BinLoader siap.<br>Terima kasih sudah berlangganan di Magnum Game";
+ msgs.innerHTML="GoldHEN sudah berhasil, BinLoader siap.<br>Terima kasih sudah berlangganan GemboX PlayStation";
 }
 
 function run_hax() {
@@ -693,7 +693,7 @@ function kernelExploit() {
   for (var i = 18; i < NUM_KQUEUES; i += 2) chain.fcall(window.syscalls[6], kqueues[i]);
   chain.run(); 
 
-  msgs.innerHTML="1. Masukkan Flashdisk sekarang dan cabut setelah Notifikasi USB hilang.<br>2. Tekan X setelah mencabut Flashdisk";
+  msgs.innerHTML="1. Masukkan Flashdisk sekarang dan Cabut setelah Notifikasi USB hilang.<br>2. Tekan Enter/Masuk setelah mencabut Flashdisk";
   
   return new Promise((resolve, reject) => {
   document.body.addEventListener('click',function(e) {
