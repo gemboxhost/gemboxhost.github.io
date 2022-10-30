@@ -158,16 +158,17 @@ background-size:cover;
 }
 button {
             background:white;
+	transition-duration: 0.4s;
             border: 5px solid #e2a110;
             border-radius: 10px;
             width: 200px;
             height: 43px;            
             text-align: center;
+			cursor: pointer;
 }
 button:hover {
-            box-shadow: 0 0px 20px 0 white;
-            color: white;
-            border-radius: 10px;
+            background-color: #0058b1;
+    color: white;
 }
 
 hr {
@@ -798,17 +799,17 @@ Tools.style.display = "none";
 <h1 style='font-size:30px;text-align:center;color:yellow;margin-top:1%;'>Host Light Payload 9.00fw</h1>
 <h1 id=progress style='font-size:25px;text-align:center;color: white;'>Status</h1><br><br><br>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.2.5b7 by SiSTRo for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen222()" style='width:290px;height:55px;font-size:30px;text-align:center;color:black' > GoldHen v2.2.5b7 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.2.5b7 by SiSTRo for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen222()" style='width:295px;height:55px;font-size:30px;text-align:center' > GoldHen v2.2.5b7 </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center;color:black' > Cheat Copy </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00 fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center;color:black' > Orbis Toolbox </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='unlocks some debug features available on testkit'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDexE()" style='font-size:20px;text-align:center;color:black' > ToDex Enable </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Disable ToDEX'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDexD()" style='font-size:20px;text-align:center;color:black' > ToDex Disable </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center' > Cheat Copy </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00 fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center' > Orbis Toolbox </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='unlocks some debug features available on testkit'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDexE()" style='font-size:20px;text-align:center' > ToDex Enable </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Disable ToDEX'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDexD()" style='font-size:20px;text-align:center' > ToDex Disable </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableUpdates()" style='font-size:20px;text-align:center;color:black' >Disable Updates</button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableUpdates()" style='font-size:20px;text-align:center;color:black' > Enable Update </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Disable the auto opening of the last page used in the PS4 WebBrowser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_HistoryBlocker()" style='font-size:20px;text-align:center;color:black' > History Blocker </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Enable Browser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableBrowser()" style='font-size:20px;text-align:center;color:black' > Enable Browser </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableUpdates()" style='font-size:20px;text-align:center' >Disable Updates</button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableUpdates()" style='font-size:20px;text-align:center' > Enable Update </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Disable the auto opening of the last page used in the PS4 WebBrowser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_HistoryBlocker()" style='font-size:20px;text-align:center' > History Blocker </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Enable Browser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableBrowser()" style='font-size:20px;text-align:center' > Enable Browser </button>
 <br><br><br>
 </div>
 <div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
