@@ -17,11 +17,11 @@ background-size:cover;
             padding: 1px;
             margin: 1px;
             background:white;
+	transition-duration: 0.4s;
 }
 button:hover {
-            box-shadow: 0 0px 20px 0 white;
-            color: white;
-            border-radius: 10px;
+            background-color: #0058b1;
+    color: white;
 }
 header{
 	height: 3em;
