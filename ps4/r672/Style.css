@@ -11,8 +11,8 @@ background-size:cover;
             
             border: 5px solid #e2a110;
             border-radius: 10px;
-	    width: 250px;
-            height: 45px;            
+	    width: 170px;
+            height: 40px;            
             text-align: center;
             padding: 1px;
             margin: 1px;
@@ -30,6 +30,10 @@ header{
 	top: 0;
 	left: 0;
 	z-index: 10;
+}
+#msgs2 {
+    font-size: 25px;
+    font-family: comic sans ms;
 }
 #clock{
  float:right;
