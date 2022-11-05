@@ -47,7 +47,7 @@ function run_hax() {
  if (chain.syscall(23, 0).low != 0x0) {
   localStorage.failcount= ++localStorage.failcount;
   kernelExploit();
-  alert("Kernel Exploit Done, Remove USB Then Press OK To Continue...");
+  alert("Kernel Exploit Berhasil, Cabut USB lalu tekan OK");
   localStorage.failcount= --localStorage.failcount;
   setTimeout(JBpass,500);
  }
@@ -680,7 +680,7 @@ function kernelExploit() {
   for (var i = 18; i < NUM_KQUEUES; i += 2) chain.fcall(window.syscalls[6], kqueues[i]);
   chain.run(); 
   
-  alert("Insert USB, Press OK After The Notification Has Gone.");
+  alert("Masukkan USB, Tekan OK Setelah Notifikasi USB Hilang.");
 
   for (var i = 1; i < NUM_KQUEUES; i += 2) chain.fcall(window.syscalls[6], kqueues[i]);
   chain.run(); 
@@ -699,7 +699,7 @@ function kernelExploit() {
    return; 
   }
   else {
-   alert("Kernel Exploit Failed! Reboot And Try Again.");
+   alert("Kernel Exploit Gagal! Restart dan Coba Lagi.");
    p.write8(0, 0);
    return;
   }
