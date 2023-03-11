@@ -10,6 +10,8 @@ table, th, td {
   <hr>
     <div id="dropdown">
     <h3>Select USB Flash Dumping Device</h3>
+    <h3>Pilih port tempat dump akan disimpan (usb000 port kanan - usb001 port kiri)</h3>
+    <h2><span style='color:red'>FAT32 MBR</span></h2>
     <select id="usbList" onchange="updateDumpPath()">
     <option>/dev_usb000/</option>
     <option>/dev_usb001/</option>
@@ -25,6 +27,8 @@ table, th, td {
     <input id='init' style='margin:0px 10px 0px 10px' type='button' value='NOR' onclick='initROP(true)'/>
     <input id='nand' style='margin:0px 10px 0px 10px' type='button' value='NAND' onclick='nand()'/>
     </h3>
+    <h3><span style='color:blue'>NAND</span> - untuk konsol memori Nand (Fat model cech<span style='color:blue'>Axx</span>/cech<span style='color:blue'>Bxx</span>/cech<span style='color:blue'>Cxx</span>/cech<span style='color:blue'>Exx</span>/cech<span style='color:blue'>Gxx</span>)</h3>
+    <h3><span style='color:green'>NOR</span> - untuk konsol memori Nor (Fat model cech<span style='color:green'>Hxx</span>/cech<span style='color:green'>Jxx</span>/cech<span style='color:green'>Kxx</span>/cech<span style='color:green'>Lxx</span>/cech<span style='color:green'>Mxx</span>/cech<span style='color:green'>Pxx</span>/cech<span style='color:green'>Qxx</span>, Slim model <span style='color:green'>2xxxx</span>)</h3>
   <div id="result" tabindex="0"></div>
   <div id="offsets" style="display: none;">
   <table>
