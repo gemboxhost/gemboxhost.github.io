@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>PS3 Jailbreak | Magnum Game</title>
+<style type="text/css">
+button {
+    border: 5px solid #e2a110;
+    border-radius: 10px;
+    width: 205px;
+    height: 65px;            
+    text-align: center;
+	background:white;
+	transition-duration: 0.4s;
+    padding: 6px;
+    margin: 6px;
+}
+button:hover {
+    background-color: #0058b1;
+    color: white;
+}
+.pointer {
+    cursor: pointer;
+}
+.yellow {
+    color:yellow;
+}
+.titleDiv {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    animation: colorChangeTD 10s infinite;
+}
+#date {
+    float: left;
+}
+.title {
+    text-align: center;
+}
+#clock {
+    float: right;
+}
+#msgs2 {
+    font-size: 25px;
+    font-family: comic sans ms;
+	color:yellow;
+}
+</style>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+</head>
+<body style="background-color:black;color:white;font-size:20px;text-align:center;font-family: sans-serif;">
+<div class="titleDiv">
+        <span id="clock">{CLOCK}</span>
+        <span class="title">"HEN OFFICIAL 4.84 - 4.90"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span id="date">{DATE}</span>
+    </div>
+<br><br><br><br><br><br>
+<h1 id=msgs2>Status</h1>
+<a href="https://www.sistro.my.id/ps3/auto48x"><button style='font-size:30px;text-align:center' class="pointer" onMouseOver="msgs2.innerHTML='Auto Installer HEN 4.8X'"; onmouseout="msgs2.innerHTML='Status'" type="button"><B>Auto 4.8X</B></button></a>
+<a href="https://www.sistro.my.id/ps3/alt"><button style='font-size:30px;text-align:center' class="pointer" onMouseOver="msgs2.innerHTML='Alternate Installer HEN 4.84 - 4.90'"; onmouseout="msgs2.innerHTML='Status'" type="button"><B>Alternate</B></button></a>
+<a href="https://www.sistro.my.id/ps3/auto490"><button style='font-size:30px;text-align:center' class="pointer" onMouseOver="msgs2.innerHTML='Auto Installer HEN 4.90'"; onmouseout="msgs2.innerHTML='Status'" type="button"><B>Auto 4.90</B></button></a>
+<div style="position:fixed;left:0;bottom:20px;width:100%;font-size:22px;">
+<span class="yellow" >*Host by :</span >  Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="yellow" >*Special Thanks To :</span >  PS3xploit Team
+</div>
+<script>
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple")); PS4fw.innerHTML=""+UA+" Detected";
+</script>
+</body>
+</html>
