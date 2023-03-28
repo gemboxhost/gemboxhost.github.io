@@ -9,7 +9,7 @@ background-size:cover;
 }
  button {
             
-            border: 5px solid #e2a110;
+            border: 5px solid #454545;
             border-radius: 10px;
             width: 200px;
             height: 40px;           
@@ -84,8 +84,8 @@ header div{
 	margin-top: -1.5em;
 }
 .pointer {cursor: pointer;}
-.yellow {
-  color:yellow;
+.credit {
+  color:white;
  }
  .hue {
   color:yellow;
