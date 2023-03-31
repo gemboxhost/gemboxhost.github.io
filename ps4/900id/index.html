@@ -190,9 +190,9 @@ opacity:0.7;
 
     </style>
 <script>
-window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
+window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Cache Halaman Dimulai!!";};
 window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-window.applicationCache.oncached=function(e){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Reopen the Page !!"; }, 1500);localStorage.cachedG="yes";};
+window.applicationCache.oncached=function(e){document.getElementById("progress").innerHTML="Halaman Berhasil Di-cache!!";setTimeout(function(){document.getElementById("progress").innerHTML="Tutup & Buka kembali Halaman!!"; }, 1500);localStorage.cachedG="yes";};
 </script>
 <meta charset="utf-8">
 <title>Auto Host 9.00fw | Magnum Game</title>
@@ -236,7 +236,7 @@ function goldhen24(){
 }
 </script>
 </head>
-<body onload="if(localStorage.cachedG=='yes')setTimeout(poc,50);" style='background-color:black;background-image: url("hen.jpg");background-position: center;background-repeat: no-repeat;background-size: cover;'>
+<body onload="if(localStorage.cachedG=='yes')setTimeout(poc,50);" style='background-color:black;background-image: url("bg.jpg");background-position: center;background-repeat: no-repeat;background-size: cover;'>
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>Auto Host New GoldHen v2.4b5 9.00fw</h1>
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Proses Jailbreak..,.. mohon tunggu</h1>
 <div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
