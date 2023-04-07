@@ -19,13 +19,14 @@ body {
     text-align: center;
 }
 button {
-    background:rgba(0,0,0,0.5);
+    background: black;
     box-shadow: 0 0px 10px 0 black;
     border: 5px solid #454545;
     border-radius: 35px;          
     text-align: center;
     padding: 6px;
     margin: 6px;
+	transition: 300ms;
 }
 button:hover {
     box-shadow: 0 0px 20px 0 white;
@@ -40,6 +41,7 @@ img {
 }
 .credit {
     color:white;
+	text-shadow: 2px 2px #000000;
 }
 .titleDiv {
     color: rgb(255, 255, 255);
@@ -49,7 +51,7 @@ img {
     box-shadow: 0px 0px 5px;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     animation: colorChangeTD 10s infinite;
 }
 #date {
@@ -64,6 +66,7 @@ img {
 #msgs {
     font-size: 25px;
     font-family: comic sans ms;
+	text-shadow: 2px 2px #000000;
 }
 .btn-main {
 background: black;
@@ -102,11 +105,11 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
         <span id="date">{DATE}</span>
     </div>
 <br><br>
-<h1 id=msgs style='font-size:30px;margin:0;color:white'>Host For Playstation Jailbreak</h1>
-<br><br>
-<a onMouseOver="msgs.innerHTML='PS3 Jailbreak 4.90 fw'" onmouseout="msgs.innerHTML='Host For Playstation Jailbreak'" href="https://www.sistro.my.id/ps3"><button class="pointer"><img src="./img/ps3.png"></button></a>
-<a onMouseOver="msgs.innerHTML='PS4 Jailbreak 6.72-9.00 fw'" onmouseout="msgs.innerHTML='Host For Playstation Jailbreak'" href="https://www.sistro.my.id/ps4"><button class="pointer"><img src="./img/ps4.png"></button></a>
-<a onMouseOver="msgs.innerHTML='PS5 Debug Setting 3.00-4.51 fw'" onmouseout="msgs.innerHTML='Host For Playstation Jailbreak'" href="https://www.sistro.my.id/ps5"><button class="pointer"><img src="./img/ps5.png"></button></a>
+<h1 id=msgs style='font-size:30px;margin:0;color:white'>Select Your Console</h1>
+<br>
+<a onMouseOver="msgs.innerHTML='PS3 Jailbreak 4.90 fw'" onmouseout="msgs.innerHTML='Select Your Console'" href="https://www.sistro.my.id/ps3"><button class="pointer"><img src="./img/ps3.png"></button></a>
+<a onMouseOver="msgs.innerHTML='PS4 Jailbreak 6.72-9.00 fw'" onmouseout="msgs.innerHTML='Select Your Console'" href="https://www.sistro.my.id/ps4"><button class="pointer"><img src="./img/ps4.png"></button></a>
+<a onMouseOver="msgs.innerHTML='PS5 Debug Setting 3.00-4.51 fw'" onmouseout="msgs.innerHTML='Select Your Console'" href="https://www.sistro.my.id/ps5"><button class="pointer"><img src="./img/ps5.png"></button></a>
 <br><br><br>
 <a href="https://saweria.co/magnumgameofficial" target="_blank"><button class="btn btn-main">★ Press Here for Support Us ★</button></a>
 <div style="position:fixed;left:0;bottom:20px;width:100%;font-size:22px;">
