@@ -8,10 +8,8 @@ font-size:20px;
 font-weight:lighter;
 text-align:left;
 color:#FFFFFF;
-background-size:cover;
 background-image: url("bg.jpg");
 background-position: center;
-background-repeat: no-repeat;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -50,6 +48,7 @@ background-repeat: no-repeat;
  }
  .credit {
   color:white;
+  text-shadow: 2px 2px #000000;
  }
  .hue {
   color:yellow;
@@ -160,20 +159,33 @@ background-repeat: no-repeat;
   animation-duration: 0.4s
 }
 button {
-            background:white;
-	transition-duration: 0.4s;
-            border: 5px solid #454545;
-            border-radius: 10px;
-            width: 200px;
-            height: 43px;            
-            text-align: center;
-			cursor: pointer;
+    width: 225px;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: rgba(0, 50, 100, 0.5);
+	box-shadow: 5px 10px 8px black;
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
 }
 button:hover {
-            background-color: #0058b1;
-    color: white;
+    border: solid 1px rgb(0, 100, 255);
+    box-shadow: inset 225px 0px 0px rgb(0, 100, 255);
+    animation: ani 1s;
 }
-
+@keyframes ani {
+    0% {
+       box-shadow: inset 0px 0px 0px rgb(0, 100, 255);
+       }
+    100% {
+       box-shadow: inset 225px 0px 0px rgb(0, 100, 255);
+       }
+}
 hr {
 padding:0;
 margin:0;
@@ -183,9 +195,8 @@ opacity:0.7;
 #progress {
  font-weight:bold;
  font-family: comic sans ms;
- 
-
- font-size:17px;
+ text-shadow: 4px 4px 4px black;
+ font-size:20px;
 }
 .pointer {cursor: pointer;}
 
@@ -784,11 +795,11 @@ Tools.style.display = "none";
 </script>
 </head>
 <body style='background-color:black'><br>
-<h1 style='font-size:30px;text-align:center;color:white;margin-top:1%;'>☆ Light Host Payload 9.00fw ☆</h1>
-<br><br>
-<h1 id=progress style='font-size:25px;text-align:center;color: white;'>status</h1><br>
+<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;color:white;margin-top:1%;'>☆ Light Host Payload 9.00fw ☆</h1>
+<br>
+<h1 id=progress style='font-size:20px;text-align:center;color: white;'>status</h1>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="progress.innerHTML='New GoldHen v2.4b13 by SiSTRo'"; onmouseout="progress.innerHTML='status'" type="button" onclick="goldhen24()" style='width:295px;height:55px;font-size:25px;text-align:center' > New GoldHEN v2.4b13 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='New GoldHen v2.4b13 by SiSTRo'"; onmouseout="progress.innerHTML='status'" type="button" onclick="goldhen24()" style='font-size:20px;text-align:center' > GoldHEN v2.4b13 </button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center' > Cheat Copy </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00 fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center' > Orbis Toolbox </button>

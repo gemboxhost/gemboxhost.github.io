@@ -8,169 +8,71 @@ font-size:20px;
 font-weight:lighter;
 text-align:left;
 color:#FFFFFF;
-background-size:cover;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
- .content {
-  width:90%;
-  height:15%;
-  margin-left:3.5%;
-  background:rgba(0,0,0,0.5);
-  color:white;
-  margin-top:0%;
-  font-size:25px;
-  text-align:center;
-  border-radius:30px;
-  padding:20px;
-  line-height:12px;
-  position:absolute;bottom:0px;
- }
- .title {
-  font-size:40px;
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-weight:bolder;
-  margin-bottom:10px;
- }
  .credit {
   color:white;
- }
- .hue {
-  color:yellow;
-  padding:10px;
-  border-radius:10px;
-  animation:hue 5s linear infinite;
-  -webkit-animation: hue 5s linear infinite;
-  box-shadow: 0px 0px 10px yellow;
-  color:white;
-  background:rgba(255,255,0,0.4);
- }
- .hue:hover{
-  color:yellow;
-  background:transparent;
- }
- @keyframes hue{
- 0%{
- filter:hue-rotate(0deg);
- -webkit-filter:hue-rotate(0deg);
- }
- 10%{
- box-shadow: 0px 1px 10px yellow;
- }
- 20%{
- box-shadow: 1px 1px 10px yellow;
- }
- 30%{
- box-shadow: 1px 0px 10px yellow;
- }
- 40%{
-  box-shadow: 1px -1px 10px yellow;
- }
- 50%{
- box-shadow: 0px -1px 10px yellow;
- }
- 60%{
- box-shadow: -1px -1px 10px yellow;
- }
- 70%{
- box-shadow: -1px 0px 10px yellow;
- }
- 80%{
- box-shadow: -1px 1px 10px yellow;
- }
- 90%{
- box-shadow: 0px 1px 10px yellow;
- }
- 100%{
- filter:hue-rotate(360deg);
- -webkit-filter:hue-rotate(360deg);
- }
+  text-shadow: 2px 2px #000000;
  }
  .text {
   padding-bottom:50px;
  }
   .back {
-   font-size:25px;
-   margin-top:10px;
-   display:block;
-   line-height:55px;
-   width:20%;
-   text-decoration:none;
-   height:50px;
-   background:white;
-   color:black;
-   border-radius:15px;
+   width: 225px;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: rgba(0, 50, 100, 0.5);
+	box-shadow: 5px 10px 8px black;
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
   }
   .back:hover{
-   border:2px solid white;
-   background:transparent;
-   box-sizing:border-box;
-   color:white;
+   border: solid 1px rgb(0, 100, 255);
+    box-shadow: inset 225px 0px 0px rgb(0, 100, 255);
+    animation: ani 1s;
   }
- #psip {
-  text-align: center;
-  margin-left: 38%;
-  margin-right: auto;
-  width:15%;
-  display:flex;
-  position: absolute;
-  
-  background: rgba(0, 0, 0, 0.500);
-  border-radius: 2em;
-  border: none;
-  padding: 0.8em;
-  
-  color: #ffffff;
-  padding-left: 1.5em;
-  
-  outline: none;
-  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
-  backdrop-filter: blur(5px);
-}
-/* Modal Content */
-.modal-content {
-  font-family: BFARNAZ;
-  font-size: 18px;
-  position: relative;
-  background-color: #dddddd;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+  @keyframes ani {
+    0% {
+       box-shadow: inset 0px 0px 0px rgb(0, 100, 255);
+       }
+    100% {
+       box-shadow: inset 225px 0px 0px rgb(0, 100, 255);
+       }
 }
 button {
-            background:white;
-	transition-duration: 0.4s;
-            border: 5px solid #454545;
-            border-radius: 10px;
-            width: 205px;
-            height: 43px;            
-            text-align: center;
-			cursor: pointer;
+    width: 225px;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: rgba(0, 50, 100, 0.5);
+	box-shadow: 5px 10px 8px black;
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
 }
 button:hover {
-            background-color: #0058b1;
-    color: white;
+    border: solid 1px rgb(0, 100, 255);
+    box-shadow: inset 225px 0px 0px rgb(0, 100, 255);
+    animation: ani 1s;
 }
-
+}
+@keyframes ani {
+    0% {
+       box-shadow: inset 0px 0px 0px rgb(0, 100, 255);
+       }
+    100% {
+       box-shadow: inset 225px 0px 0px rgb(0, 100, 255);
+       }
+}
 hr {
 padding:0;
 margin:0;
@@ -181,8 +83,7 @@ opacity:0.7;
  font-weight:bold;
  text-shadow: 4px 4px 4px black;
  font-family: comic sans ms;
-
- font-size:17px;
+ font-size:20px;
 }
 .pointer {cursor: pointer;}
 
@@ -787,39 +688,39 @@ Tools.style.display = "none";
 		}
 </script>
 </head>
-<body style='background-color:black;background-image: url("bg.jpg");background-position: center;background-repeat: no-repeat;background-size: cover;'>
+<body style='background-color:black;background-image: url("bg.jpg");background-position: center;'>
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>☆ Full Host Payload 9.00fw ☆</h1>
-<h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>status</h1>
+<h1 id=progress style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>status</h1>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="progress.innerHTML='New GoldHen v2.3 by SISTR0'"; onmouseout="progress.innerHTML='status'" type="button" onclick="goldhen23()" style='font-size:22px;text-align:center;width:230px;height:50px' > GoldHEN v2.3 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='New GoldHen v2.4b13 by SISTR0'"; onmouseout="progress.innerHTML='status'" type="button" onclick="goldhen24()" style='font-size:22px;text-align:center;width:230px;height:50px' > GoldHEN v2.4b13 </button>
-<br><br><br>
+<button id="button-Payload" onMouseOver="progress.innerHTML='New GoldHen v2.3 by SiSTRo'"; onmouseout="progress.innerHTML='status'" type="button" onclick="goldhen23()" style='font-size:22px;text-align:center' > GoldHEN v2.3 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='New GoldHen v2.4b13 by SiSTRo'"; onmouseout="progress.innerHTML='status'" type="button" onclick="goldhen24()" style='font-size:22px;text-align:center' > GoldHEN v2.4b13 </button>
+<br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center' > BinLoader </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center' > MiraLoader </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Jailbreak for run Mira for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="JB()" style='font-size:20px;text-align:center' > JB </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Mira Orbis for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="Mira()" style='font-size:20px;text-align:center' > Mira </button>
-<br><br>
+<br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='WebRTE for PS4 9.00 fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_WebRTE()" style='font-size:20px;text-align:center' > WebRTE </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='ps4debug for PS4 9.00 fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_PS4Debug()" style='font-size:20px;text-align:center' > Ps4debug </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00 fw'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center' > Orbis Toolbox </button>
 <a href="web.html"><button  onMouseOver="progress.innerHTML='Web Activator by Sleirsgoevy'"; onmouseout="progress.innerHTML='status'" type="button" style='font-size:20px;text-align:center'>Web Activator</button></a>
-<br><br>
+<br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='A full access FTP server for the PS4'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_FTP()" style='font-size:20px;text-align:center' > FTP </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Move installed games to an external USB drive'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_App2USB()" style='font-size:20px;text-align:center' > App2USB </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='unlocks some debug features available on testkit'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_ToDexE()" style='font-size:20px;text-align:center' > ToDex Enable </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Disable ToDEX'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_ToDexD()" style='font-size:20px;text-align:center' > ToDex Disable </button>
-<br><br>
+<br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_DisableUpdates()" style='font-size:20px;text-align:center' >Disable Updates</button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_EnableUpdates()" style='font-size:20px;text-align:center' > Enable Update </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Disable the auto opening of the last page used in the PS4 WebBrowser'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_HistoryBlocker()" style='font-size:20px;text-align:center' > History Blocker </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Enable Browser'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_EnableBrowser()" style='font-size:20px;text-align:center' > Enable Browser </button>
-<br><br>
+<br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center' > Cheat Copy </button>
 <button style='font-size:20px;text-align:center' class="pointer" onMouseOver="progress.innerHTML='All Dumper payloads'"; onmouseout="progress.innerHTML='status'" onclick="alldumpers(); return false"> Dumper Group</button>
 <button style='font-size:20px;text-align:center' class="pointer" onMouseOver="progress.innerHTML='All Linux payloads'"; onmouseout="progress.innerHTML='status'" onclick="alllinux(); return false"> Linux Group </button>
 <button style='font-size:20px;text-align:center' class="pointer" onMouseOver="progress.innerHTML='All Tools payloads'"; onmouseout="progress.innerHTML='status'" onclick="alltools(); return false"> Tools Group </button>
-<br><br>
-<button style='font-size:20px;text-align:center;width: 350px;height: 45px' class="pointer" onMouseOver="progress.innerHTML='All Mods Gtav & RDR2 payloads'"; onmouseout="progress.innerHTML='status'" onclick="allmods(); return false"> Rockstar Game Modz </button>
+<br>
+<button style='font-size:20px;text-align:center' class="pointer" onMouseOver="progress.innerHTML='All Mods Gtav & RDR2 payloads'"; onmouseout="progress.innerHTML='status'" onclick="allmods(); return false"> Game Modz </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Set the desired temperature that the PS4 fan starts'"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_fan()" style='font-size:20px;text-align:center' > Fan Control </button><select style='font-size:20px;text-align:center' id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
 <br>
 </div>
@@ -896,8 +797,8 @@ Tools.style.display = "none";
 <br><br><br>
 </div>
 <div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:22px;">
-<span class="credit" >*Host by :</span >  Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="credit" >*Special Thanks To :</span >  PS4xploit Team
+<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span >
+<span class="credit" >*Special Thanks To : PS4xploit Team</span >
 </div>
 <script>
 const OFFSET_wk_vtable_first_element = 0x104F110;
