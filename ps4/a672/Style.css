@@ -84,7 +84,7 @@ header div{
 .pointer {cursor: pointer;}
 .credit {
   color:white;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 4px 4px 4px black;
  }
  .hue {
   color:yellow;
