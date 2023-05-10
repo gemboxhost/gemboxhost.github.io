@@ -520,6 +520,12 @@ function load_GTAL(){
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
+function load_GTAB(){
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    PLfile = "GTAVBeach146_900.bin";
+    out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
+}
+
 function load_expul(){
     progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "LushModz-1.0-9.00.bin.bz2";
@@ -749,6 +755,8 @@ Tools.style.display = "none";
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.33 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_Wilde33()" style='font-size:20px;text-align:center' > GTAV W133 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.38 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_Wilde38()" style='font-size:20px;text-align:center' > GTAV W138 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.46 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_Wilde46()" style='font-size:20px;text-align:center' > GTAV W146 </button>
+<br><br>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Beach Mode Menu for 1.46 by Son84goku '"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_GTAB()" style='font-size:20px;text-align:center' >GTAV B146</button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Lamance Mod 1.38 by david1337hax '"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_GTAL()" style='font-size:20px;text-align:center' >GTAV Lamance</button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.00 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="progress.innerHTML='status'" type="button" onclick="load_Oysters100()" style='font-size:20px;text-align:center;color:red' > RDR2 V1.00 </button>
