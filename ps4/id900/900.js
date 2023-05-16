@@ -40,7 +40,7 @@ function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);to
 
 function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="GoldHEN v2.4b13 Berhasil Terpasang.<br>Tekan Tombol HOME Untuk Keluar";
+ msgs.innerHTML="GoldHEN v2.4b13 Berhasil Terpasang.<br>Tekan Tombol HOME di Stik Untuk Keluar";
 }
 
 function awaitpl() {
