@@ -85,6 +85,7 @@ header div{
 .credit {
   color:white;
   text-shadow: 4px 4px 4px black;
+  font-weight: bold;
  }
  .hue {
   color:yellow;
