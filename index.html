@@ -1,126 +1,113 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>MAGNUM HOST</title>
-<link rel="shortcut icon" href="favicon.ico"></link>
+<title>MAGNUM GAME HOST</title>
+<link rel="shortcut icon" href="img/favicon.ico"></link>
 <style type="text/css">
-body {
-    background-color: rgb(255, 255, 255);
-    background-image: url("bg.jpg");
-	background-position: center;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    margin: auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
+body{
+background-color:black;
+background-image:url("img/bg.jpg");
+background-position:center;
+color:white;
+font-size:20px;
+text-align:center;
+width: 100%;
+margin:auto;
+font-family: sans-serif;
+font-weight: bold;
 }
-button {
-    width: 210px;
-    background-color: rgba(0, 50, 100, 0.5);
-	box-shadow: 5px 10px 8px black;
-    color: rgb(255, 255, 255);
-    border: solid 1px white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 300ms;
-    cursor: pointer;
+button{
+width:388px;
+margin:5px 3px 5px 3px;
+padding:0px;
+border:1px solid white;
+text-align:left;
+color:white;
+outline:none;
+background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(14,34,87,1)35%);
+border-radius:5px;
+box-shadow: 5px 7px 5px black;
 }
-button:hover {
-    border: solid 1px rgb(0, 100, 255);
-    box-shadow: inset 210px 0px 0px rgb(0, 100, 255);
-    animation: ani 1s;
+button:hover{
+cursor:pointer;
+background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(4,9,23,1)35%);
 }
-@keyframes ani {
-    0% {
-       box-shadow: inset 0px 0px 0px rgb(0, 100, 255);
-       }
-    100% {
-       box-shadow: inset 210px 0px 0px rgb(0, 100, 255);
-       }
+.butIMG{
+display:inline-block;
+margin:-0px;
+border-right:3px solid #839ACA;
+outline:none;
+cursor:pointer;
 }
-.credit {
-    color:white;
-	text-shadow: 2px 2px #000000;
+.butIMG img{
+width:70px;
+height:70px;
+padding:5px 5px 2px 5px;
+cursor:pointer;
+}
+.butTXT{
+float:right;
+text-align:center;
+width:299px;
+font-size:28px;
+margin:22px 0 0 0;
+cursor:pointer;
 }
 .titleDiv {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #0b305e;
-    animation: colorChangeTD 10s infinite;
+color: rgb(255, 255, 255);
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+box-shadow: 0px 3px 3px black;
+padding: 10px;
+background-color: #0b305e;
 }
-#date {
-    float: left;
-	color: #FFD700;
+.credit {
+color: rgb(255, 255, 255);
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+box-shadow: 0px 0 15px black;
+padding: 10px;
+background-color: #0b305e;
 }
-.title {
-    text-align: center;
-}
-#clock {
-    float: right;
-	color: #FFD700;
-}
-#msgs {
-    color: #FFD700;
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 4px 4px 4px black;
-}
-#msgs2 {
-    color: #FFD700;
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 4px 4px 4px black;
+#progress {
+ font-weight:bold;
+ text-shadow: 4px 4px 4px black;
+ font-family: comic sans ms;
+ font-size:20px;
 }
 </style>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
-</head>   
+</head>
 <div class="titleDiv">
-        <span id="clock">{CLOCK}</span>
-        <span class="title">MAGNUM HOST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span id="date">{DATE}</span>
-    </div>
-<br><br><br>
-<h1 id=msgs style='font-size:20px;margin:0;'>select your console</h1>
-<br>
-<a onMouseOver="msgs.innerHTML='PS3 Jailbreak 4.88-4.90 fw'" onmouseout="msgs.innerHTML='select your console'" href="https://www.magnumhost.my.id/ps3"><button class="pointer">PlayStation 3</button></a>&nbsp;&nbsp;
-<a onMouseOver="msgs.innerHTML='PS4 Jailbreak 5.05-9.00 fw'" onmouseout="msgs.innerHTML='select your console'" href="https://www.magnumhost.my.id/ps4"><button class="pointer">PlayStation 4</button></a>&nbsp;&nbsp;
-<a onMouseOver="msgs.innerHTML='not yet available'" onmouseout="msgs.innerHTML='select your console'" href="https://www.magnumhost.my.id/ps5"><button class="pointer">PlayStation 5</button></a>
-<br><br><br><br>
-<h1 id=msgs2 style='font-size:20px;margin:0;'>Media Social</h1>
-<br>
-<a href="https://www.facebook.com/magnumgameofficial/" target="_blank"><button class="button">★ Facebook ★</button></a>&nbsp;&nbsp;
-<a href="https://www.instagram.com/magnumgameofficial/" target="_blank"><button class="button">★ Instagram ★</button></a>&nbsp;&nbsp;
-<a href="https://www.magnumweb.my.id/" target="_blank"><button class="button">★ Our Blog ★</button></a>
+<span class="title">MAGNUM GAME HOST</span>
+</div>
+<h1 id=progress style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;'>status</h1>
+<body>
+<button onclick="location.href='ps3/index.html'" onMouseOver="progress.innerHTML='PS3 Jailbreak 4.88-4.90 fw'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps.png"></div><div class=butTXT>PlayStation 3</div></button>
+<button onclick="location.href='ps4/index.html'" onMouseOver="progress.innerHTML='PS4 Jailbreak 6.72-9.00 fw'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps.png"></div><div class=butTXT>PlayStation 4</div></button>
+<button onclick="location.href='ps5/index.html'" onMouseOver="progress.innerHTML='not yet available'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps.png"></div><div class=butTXT>PlayStation 5</div></button>
 <br><br>
-<a href="https://saweria.co/magnumgameofficial" target="_blank"><button class="button">★ Support Us ★</button></a>&nbsp;&nbsp;
-<a href="https://www.youtube.com/@magnumgameofficial" target="_blank"><button class="button">★ YouTube ★</button></a>
-<div style="position:fixed;left:0;bottom:20px;width:100%;font-size:22px;">
-<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span >
-<span class="credit" >*Special Thanks To :  PlayStation Xploit Team&nbsp;</span >
+<button onclick="location.href='https://www.facebook.com/magnumgameofficial/'">
+<div class=butIMG><img src="img/fb.png"></div><div class=butTXT>Facebook</div></button>
+<button onclick="location.href='https://www.instagram.com/magnumgameofficial/'">
+<div class=butIMG><img src="img/ig.png"></div><div class=butTXT>Instagram</div></button>
+<button onclick="location.href='https://www.magnumweb.my.id/'">
+<div class=butIMG><img src="img/web.png"></div><div class=butTXT>Our Blog</div></button>
+<br>
+<button onclick="location.href='https://github.com/magnumgameofficial'">
+<div class=butIMG><img src="img/gh.png"></div><div class=butTXT>GitHub</div></button>
+<button onclick="location.href='https://saweria.co/magnumgameofficial'">
+<div class=butIMG><img src="img/sawer.png"></div><div class=butTXT>Support Us</div></button>
+<button onclick="location.href='https://www.youtube.com/@magnumgameofficial'">
+<div class=butIMG><img src="img/yt.png"></div><div class=butTXT>Youtube</div></button>
+<br>
+<div style="position:fixed;left:0;bottom:0px;width:100%;">
+<div class="credit">
+<span class="title">*Host by : Om Madz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Special Thanks :  PlayStation Xploit Team&nbsp;</span>
 </div>
 </body>
-</html>
+</html> 

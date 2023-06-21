@@ -1,121 +1,102 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>PS4 Jailbreak | Magnum Game</title>
+<title>PLAYSTATION 4 JAILBREAK | MAGNUM GAME</title>
+<link rel="shortcut icon" href="img/favicon.ico"></link>
 <style type="text/css">
-body {
-    background-color: rgb(255, 255, 255);
-    background-image: url("bg.jpg");
-	background-position: center;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    margin: auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
+body{
+background-color:black;
+background-image:url("img/bg.jpg");
+background-position:center;
+color:white;
+font-size:20px;
+text-align:center;
+width: 100%;
+margin:auto;
+font-family: sans-serif;
+font-weight: bold;
 }
-button {
-    width: 210px;
-    background-color: rgba(0, 50, 100, 0.5);
-	box-shadow: 5px 10px 8px black;
-    color: rgb(255, 255, 255);
-    border: solid 1px white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 300ms;
-    cursor: pointer;
+button{
+width:388px;
+margin:5px 3px 5px 3px;
+padding:0px;
+border:1px solid white;
+text-align:left;
+color:white;
+outline:none;
+background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(14,34,87,1)35%);
+border-radius:5px;
+box-shadow: 5px 7px 5px black;
 }
-button:hover {
-    border: solid 1px rgb(0, 100, 255);
-    box-shadow: inset 210px 0px 0px rgb(0, 100, 255);
-    animation: ani 1s;
+button:hover{
+cursor:pointer;
+background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(4,9,23,1)35%);
 }
-@keyframes ani {
-    0% {
-       box-shadow: inset 0px 0px 0px rgb(0, 100, 255);
-       }
-    100% {
-       box-shadow: inset 210px 0px 0px rgb(0, 100, 255);
-       }
+.butIMG{
+display:inline-block;
+margin:-0px;
+border-right:3px solid #839ACA;
+outline:none;
+cursor:pointer;
 }
-.credit {
-    color:white;
-	text-shadow: 4px 4px 4px black;
+.butIMG img{
+width:70px;
+height:70px;
+padding:5px 5px 2px 5px;
+cursor:pointer;
+}
+.butTXT{
+float:right;
+text-align:center;
+width:299px;
+font-size:28px;
+margin:22px 0 0 0;
+cursor:pointer;
 }
 .titleDiv {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #0b305e;
-    animation: colorChangeTD 10s infinite;
+color: rgb(255, 255, 255);
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+box-shadow: 0px 3px 3px black;
+padding: 10px;
+background-color: #0b305e;
 }
-#date {
-    float: left;
-	color: #FFD700;
+.credit {
+color: rgb(255, 255, 255);
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+box-shadow: 0px 0 15px black;
+padding: 10px;
+background-color: #0b305e;
 }
-.title {
-    text-align: center;
-}
-#clock {
-    float: right;
-	color: #FFD700;
-}
-#msgs2 {
-    color: #FFD700;
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 2px 2px #000000;
+#progress {
+ font-weight:bold;
+ text-shadow: 4px 4px 4px black;
+ font-family: comic sans ms;
+ font-size:20px;
 }
 </style>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
 </head>
 <div class="titleDiv">
-        <span id="clock">{CLOCK}</span>
-        <span class="title">PLAYSTATION 4 JAILBREAK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span id="date">{DATE}</span>
-    </div>
-<br><br>
-<h1 id=msgs2>select your firmware</h1>
-<a href="505/index.html"><button onMouseOver="msgs2.innerHTML='Full Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Full 5.05</B></button></a>&nbsp;
-<a href="a505/index.html"><button onMouseOver="msgs2.innerHTML='Auto Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Auto 5.05</B></button></a>
-<br><br><br>
-<a href="r672/index.html"><button onMouseOver="msgs2.innerHTML='Light Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Light 6.72</B></button></a>&nbsp;
-<a href="672/index.html"><button onMouseOver="msgs2.innerHTML='Full Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Full 6.72</B></button></a>&nbsp;
-<a href="a672/index.html"><button onMouseOver="msgs2.innerHTML='Auto Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Auto 6.72</B></button></a>
-<br><br><br>
-<a href="702/index.html"><button onMouseOver="msgs2.innerHTML='Full Host GoldHEN v2.3 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Full 7.02</B></button></a>&nbsp;
-<a href="75x/index.html"><button onMouseOver="msgs2.innerHTML='Full Host GoldHEN v2.3 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Full 7.55</B></button></a>
-<br><br><br>
-<a href="r900/index.html"><button onMouseOver="msgs2.innerHTML='Light Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Light 9.00</B></button></a>&nbsp;
-<a href="900/index.html"><button onMouseOver="msgs2.innerHTML='Full Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Full 9.00</B></button></a>&nbsp;
-<a href="a900/index.html"><button onMouseOver="msgs2.innerHTML='Auto Host GoldHEN v2.4b13 by magnumhost'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Auto 9.00</B></button></a>&nbsp;
-<a href="psphive/index.html"><button onMouseOver="msgs2.innerHTML='PS-Phive! v3 Leeful Host GoldHEN v2.3 by magnumhost [ID]'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>PS-Phive! 9.00 ID</B></button></a>
-<br><br><br>
-<a href="All-in-One/index.html"><button onMouseOver="msgs2.innerHTML='All-in-One Auto Host GoldHEN v2.4b13 by magnumhost [ID]'"; onmouseout="msgs2.innerHTML='select your firmware'" type="button"><B>Host All in One</B></button></a>
-<div style="position:fixed;left:0;bottom:20px;width:100%;font-size:22px;">
-<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span >
-<span class="credit" >*Special Thanks To : PS4xploit Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span >
+<span class="title">PLAYSTATION 4 JAILBREAK</span>
+</div>
+<h1 id=progress style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;'>status</h1>
+<body>
+<button onclick="location.href='ps4auto/index.html'" onMouseOver="progress.innerHTML='Auto Host GoldHEN v2.4b14 by magnumhost'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps4.png"></div><div class=butTXT>Only GoldHEN</div></button>
+<button onclick="location.href='ps4autoid/index.html'" onMouseOver="progress.innerHTML='Auto Host GoldHEN v2.4b14 ID by magnumhost'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps4.png"></div><div class=butTXT>Only GoldHEN ID</div></button>
+<br>
+<button onclick="location.href='ps4full/index.html'" onMouseOver="progress.innerHTML='Full Host GoldHEN v2.4b14 by magnumhost'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps4.png"></div><div class=butTXT>Full Host GoldHEN</div></button>
+<button onclick="location.href='psphive/index.html'" onMouseOver="progress.innerHTML='PS-Phive! Host GoldHEN v2.3 ID by magnumhost'"; onmouseout="progress.innerHTML='status'">
+<div class=butIMG><img src="img/ps4.png"></div><div class=butTXT>PS-Phive! 9.00 ID</div></button>
+<br>
+<div style="position:fixed;left:0;bottom:0px;width:100%;">
+<div class="credit">
+<span class="title">*Host by : Om Madz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Special Thanks :  PlayStation Xploit Team&nbsp;</span>
 </div>
 </body>
-</html>
+</html> 
