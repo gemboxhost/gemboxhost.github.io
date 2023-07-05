@@ -1,100 +1,107 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>PLAYSTATION 3 JAILBREAK | MAGNUM GAME</title>
+<meta charset="utf-8">
+<title>PS3 Jailbreak | Magnum Game</title>
 <style type="text/css">
-body{
-background-color:black;
-background-image:url("img/bg.jpg");
-background-position:center;
-color:white;
-font-size:20px;
-text-align:center;
-width: 100%;
-margin:auto;
-font-family: sans-serif;
-font-weight: bold;
+body {
+    background-color: black;
+	background-position: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
-button{
-width:388px;
-margin:5px 3px 5px 3px;
-padding:0px;
-border:1px solid white;
-text-align:left;
-color:white;
-outline:none;
-background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(14,34,87,1)35%);
-border-radius:5px;
-box-shadow: 5px 7px 5px black;
+button {
+    width: 210px;
+    background-color: black;
+	box-shadow: 0 5px 15px 0 white;
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
 }
-button:hover{
-cursor:pointer;
-background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(4,9,23,1)35%);
+button:hover {
+    border: solid 1px rgb(0, 100, 255);
+    box-shadow: inset 210px 0px 0px rgb(0, 100, 255);
+    animation: ani 1s;
 }
-.butIMG{
-display:inline-block;
-margin:-0px;
-border-right:3px solid #839ACA;
-outline:none;
-cursor:pointer;
-}
-.butIMG img{
-width:70px;
-height:70px;
-padding:5px 5px 2px 5px;
-cursor:pointer;
-}
-.butTXT{
-float:right;
-text-align:center;
-width:299px;
-font-size:28px;
-margin:22px 0 0 0;
-cursor:pointer;
-}
-.titleDiv {
-color: rgb(255, 255, 255);
-font-size: 30px;
-font-weight: bold;
-text-align: center;
-box-shadow: 0px 3px 3px black;
-padding: 10px;
-background-color: #0b305e;
+@keyframes ani {
+    0% {
+       box-shadow: inset 0px 0px 0px rgb(0, 100, 255);
+       }
+    100% {
+       box-shadow: inset 210px 0px 0px rgb(0, 100, 255);
+       }
 }
 .credit {
-color: rgb(255, 255, 255);
-font-size: 25px;
-font-weight: bold;
-text-align: center;
-box-shadow: 0px 0 15px black;
-padding: 10px;
-background-color: #0b305e;
+    color:white;
+	text-shadow: 4px 4px 4px black;
 }
-#progress {
- font-weight:bold;
- text-shadow: 4px 4px 4px black;
- font-family: comic sans ms;
- font-size:20px;
+.titleDiv {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    animation: colorChangeTD 10s infinite;
+}
+#date {
+    float: left;
+}
+.title {
+    text-align: center;
+}
+#clock {
+    float: right;
+}
+#msgs2 {
+    font-size: 20px;
+    font-family: comic sans ms;
+	text-shadow: 4px 4px 4px black;
+	color: #FFD700;
 }
 </style>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
 </head>
 <div class="titleDiv">
-<span class="title">PLAYSTATION 3 JAILBREAK</span>
+        <span id="clock">{CLOCK}</span>
+        <span class="title">PLAYSTATION 3 JAILBREAK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span id="date">{DATE}</span>
+    </div>
+<br><br>
+<h1 id=msgs2>select your method</h1>
+<a href="https://www.magnumhost.my.id/ps3/official"><button onMouseOver="msgs2.innerHTML='HEN Official Installer 4.88-4.90 hfw'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>HEN Official</B></button></a>&nbsp;&nbsp;
+<a href="https://www.magnumhost.my.id/ps3/unofficial"><button onMouseOver="msgs2.innerHTML='HEN Unofficial Installer 4.90 hfw'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>HEN Unofficial</B></button></a>
+<br><br><br>
+<a href="https://www.magnumhost.my.id/ps3/downgrade"><button onMouseOver="msgs2.innerHTML='Downgrade PS3 HFW 4.90.1'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>Downgrade 4.90</B></button></a>
+<div style="position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
+<span class="credit" >*WhatsApp : 0852-5551-9996&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS3xploit Team</span >
 </div>
-<h1 id=progress style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;'>status</h1>
-<body>
-<button onclick="location.href='https://www.magnumhost.my.id/ps3/official'" onMouseOver="progress.innerHTML='HEN Official Installer 4.88-4.90 hfw'"; onmouseout="progress.innerHTML='status'">
-<div class=butIMG><img src="img/hen.png"></div><div class=butTXT>HEN Official</div></button>
-<br>
-<button onclick="location.href='https://www.magnumhost.my.id/ps3/unofficial'" onMouseOver="progress.innerHTML='HEN Unofficial Installer 4.90 hfw'"; onmouseout="progress.innerHTML='status'">
-<div class=butIMG><img src="img/rus.png"></div><div class=butTXT>HEN Unofficial</div></button>
-<br>
-<button onclick="location.href='https://www.magnumhost.my.id/ps3/dg490'" onMouseOver="progress.innerHTML='Downgrade PS3 HFW 4.90.1'"; onmouseout="progress.innerHTML='status'">
-<div class=butIMG><img src="img/dg.png"></div><div class=butTXT>Downgrade 4.90</div></button>
-<br>
-<div style="position:fixed;left:0;bottom:0px;width:100%;">
-<div class="credit">
-<span class="title">*Host by : Om Madz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Special Thanks :  PlayStation Xploit Team&nbsp;</span>
-</div>
+<script>
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple")); PS4fw.innerHTML=""+UA+" Detected";
+</script>
 </body>
-</html> 
+</html>
