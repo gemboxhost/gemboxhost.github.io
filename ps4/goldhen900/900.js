@@ -40,11 +40,11 @@ function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);to
 
 function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="PS4 Exploited And GoldHEN Loaded.";
+ msgs.innerHTML="GoldHEN terbaru berhasil terpasang.<br>Tekan Tombol HOME di Stik untuk Keluar";
 }
 
 function awaitpl() {
- msgs.innerHTML="GoldHEN Already Loaded, BinLoader Is Ready.<br>Send A Payload To Port 9020 Now";
+ msgs.innerHTML="GoldHEN Berhasil Terpasang, BinLoader Siap.<br>Terima Kasih Sudah Berlangganan di Magnum Game";
 }
 
 function run_hax() {
@@ -446,7 +446,7 @@ function userland() {
  p.write8(kstr, orig_kview_buf);
  chain = new rop();
  if (chain.syscall(20).low == 0) {
-  alert("Webkit Exploit Failed. Try Again.");
+  alert("Webkit Exploit Gagal. Coba lagi.");
   while (1);
  }
 }
@@ -693,7 +693,7 @@ function kernelExploit() {
   for (var i = 18; i < NUM_KQUEUES; i += 2) chain.fcall(window.syscalls[6], kqueues[i]);
   chain.run(); 
 
-  msgs.innerHTML="1. Insert USB Then Remove It After The Notification Has Gone.<br>2. Press X After You Have Removed The USB";
+  msgs.innerHTML="1. Masukkan Flashdisk lalu Cabut setelah Notifikasi USB hilang.<br>2. Tekan ENTER setelah mencabut Flashdisk";
   
   return new Promise((resolve, reject) => {
   document.body.addEventListener('click',function(e) {
@@ -715,7 +715,7 @@ function kernelExploit() {
    else if(localStorage.HenLoaded!="yes"){setTimeout(loadPayload,500);}
    return; 
   }
-  alert("Kernel Exploit Failed! Reboot and Try Again.");
+  alert("Kernel Exploit Gagal! Reboot dan Coba lagi.");
   p.write8(0, 0);
   return;
   
