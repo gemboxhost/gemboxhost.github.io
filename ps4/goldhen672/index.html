@@ -11,11 +11,11 @@ var leaker_obj={a:0};var leaker_arr=new Uint32Array(6);var oob_slave=new Uint8Ar
 function DLProgress(e){
 	parent.ScrOverlay.style.display="block";
 	Percent=(Math.round(e.loaded / e.total * 100));
-	parent.cacheUPDtxt.innerHTML="Installing Offline Cache: " + Percent + "%";
+	parent.cacheUPDtxt.innerHTML="Menginstall Offline Cache: " + Percent + "%";
 	parent.CacheBar.style.width=Percent + '%';
 }
 function DisplayCacheProgress(){
-	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Cache Installed Successfully.Reopen the Page !!"; }, 1500);localStorage.cached672="yes";};
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Cache Berhasil diinstall. Tutup & Buka ulang Browser !!"; }, 1500);localStorage.cached672="yes";};
 	window.applicationCache.addEventListener("progress",DLProgress,false);
 	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
@@ -23,7 +23,7 @@ function DisplayCacheProgress(){
     window.applicationCache.onerror=function(){localStorage.cached672="yes";};
 </script>
 </head>
-<body onload="if(localStorage.cached672=='yes')setTimeout(load_goldhen224,50);" style='background-color:black;background-image: url("bg.jpg");background-position: center;'>
+<body onload="if(localStorage.cached672=='yes')setTimeout(load_goldhen224,50);" style='background-color:black;background-position:center;'>
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
 <h1 style='font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'><a class="button" style="color: #FFD700;text-shadow: 4px 4px 4px black;font-size:100%; font-weight: bold;">Sukses <span id=passCounter></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆ Auto GoldHEN v2.4b14 PS4 6.72fw ☆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  class="button2" style="color: #FFD700;text-shadow: 4px 4px 4px black;font-size:100%; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;Gagal <span id=failCounter></span> </a>
