@@ -1041,17 +1041,17 @@ function kernelExploit() {
      else {
       failCounter0.innerHTML=localStorage.failcount;
 	  document.body.addEventListener('click',loadConfig,{once:true});
-      cacheUPDtxt.innerHTML="Kernel Exploit Gagal! Reboot dan Coba lagi.<br>Tekan ENTER/MASUK jika ingin mengganti ESP Settings.";
-      alert("Kernel Exploit Gagal! Reboot dan Coba lagi."); 
+      cacheUPDtxt.innerHTML="Kernel Exploit Failed! Reboot And Try Again.<br>Press X If you Need To Change The ESP Settings.";
+      alert("Kernel Exploit Failed! Reboot And Try Again."); 
      }
     },100);	
    }
-   else{disptime=timeleft/1000;cacheUPDtxt.innerHTML="Menjalankan Kernel Exploit, mohon tunggu ... <span style='font-family:monospace'>"+disptime.toFixed(1)+"</span>";}
+   else{disptime=timeleft/1000;cacheUPDtxt.innerHTML="Running Kernel Exploit, Please Wait ... <span style='font-family:monospace'>"+disptime.toFixed(1)+"</span>";}
    timeleft -= 100;
    },100);
   }
   else {
-   cacheUPDtxt.innerHTML="1. Masukkan Flashdisk lalu Cabut setelah Notifikasi USB hilang.<br>2. Tekan ENTER/MASUK setelah mencabut Flashdisk";
+   cacheUPDtxt.innerHTML="1. Insert USB Then Remove It After The Notification Has Gone.<br>2. Press X After You Have Removed The USB";
   
    return new Promise((resolve, reject) => {
     document.body.addEventListener('click',function(e) {
@@ -1077,8 +1077,8 @@ function kernelExploit() {
      }
      else {
       failCounter0.innerHTML=localStorage.failcount;
-      cacheUPDtxt.innerHTML="Kernel Exploit Gagal! Reboot dan coba lagi.";
-      alert("Kernel Exploit Gagal! Reboot dan coba lagi."); 
+      cacheUPDtxt.innerHTML="Kernel Exploit Failed! Reboot And Try Again.";
+      alert("Kernel Exploit Failed! Reboot And Try Again."); 
      } 
    resolve();
    }, {once: true});
