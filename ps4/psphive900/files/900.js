@@ -1051,7 +1051,7 @@ function kernelExploit() {
    },100);
   }
   else {
-   cacheUPDtxt.innerHTML="1. Insert USB Then Remove It After The Notification Has Gone.<br>2. Press X After You Have Removed The USB";
+   cacheUPDtxt.innerHTML="1. Masukkan Flashdisk lalu Cabut setelah Notifikasi USB hilang.<br>2. Tekan ENTER setelah mencabut Flashdisk.";
   
    return new Promise((resolve, reject) => {
     document.body.addEventListener('click',function(e) {
