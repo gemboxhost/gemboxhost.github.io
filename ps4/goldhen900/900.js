@@ -40,11 +40,11 @@ function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);to
 
 function allset(){
  localStorage.HenLoaded="yes";sessionStorage.HenLoaded="yes";
- msgs.innerHTML="GoldHEN terbaru berhasil terpasang.<br>Tekan Tombol HOME di Stik untuk Keluar";
+ msgs.innerHTML="GoldHEN terbaru berhasil terpasang<br>Tekan Tombol HOME di Stik untuk Keluar";
 }
 
 function awaitpl() {
- msgs.innerHTML="GoldHEN Berhasil Terpasang, BinLoader Siap.<br>Terima Kasih Sudah Berlangganan di Magnum Game";
+ msgs.innerHTML="GoldHEN sudah Terpasang, BinLoader Siap<br>Terima Kasih Sudah Berlangganan di Magnum Game";
 }
 
 function run_hax() {
@@ -693,7 +693,7 @@ function kernelExploit() {
   for (var i = 18; i < NUM_KQUEUES; i += 2) chain.fcall(window.syscalls[6], kqueues[i]);
   chain.run(); 
 
-  msgs.innerHTML="1. Masukkan Flashdisk lalu Cabut setelah Notifikasi USB hilang.<br>2. Tekan ENTER setelah mencabut Flashdisk";
+  msgs.innerHTML="1. Masukkan Flashdisk lalu Cabut setelah Notifikasi USB hilang.<br>2. Tekan ENTER atau MASUK setelah mencabut Flashdisk.";
   
   return new Promise((resolve, reject) => {
   document.body.addEventListener('click',function(e) {
