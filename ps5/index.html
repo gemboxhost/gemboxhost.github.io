@@ -1,8 +1,7 @@
-
 <html>
 <head>
-<meta charset="utf-8" />
-<title>Magnum Game Host</title>
+<meta charset="utf-8">
+<title>PS5 Jailbreak | Magnum Game</title>
 <style type="text/css">
 body {
     background-color: #161d1f;
@@ -41,7 +40,7 @@ button:hover {
 }
 .credit {
     color:white;
-	text-shadow: 2px 2px #000000;
+	text-shadow: 4px 4px 4px black;
 }
 .titleDiv {
     color: rgb(255, 255, 255);
@@ -62,17 +61,11 @@ button:hover {
 #clock {
     float: right;
 }
-#msgs {
-    color: #FFD700;
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 4px 4px 4px black;
-}
 #msgs2 {
-    color: #FFD700;
     font-size: 20px;
     font-family: comic sans ms;
 	text-shadow: 4px 4px 4px black;
+	color: #FFD700;
 }
 </style>
 <script>
@@ -91,28 +84,21 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
   
   setInterval(showdate,0);
 </script>
-</head>   
+</head>
 <div class="titleDiv">
         <span id="clock">{CLOCK}</span>
-        <span class="title">Magnum Game Host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="title">PlayStation 5 Jailbreak&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         <span id="date">{DATE}</span>
     </div>
-<br><br><br>
-<h1 id=msgs style='font-size:20px;margin:0;'>select your console</h1>
-<br>
-<a onMouseOver="msgs.innerHTML='PS3 Jailbreak 4.82-4.90 fw'" onmouseout="msgs.innerHTML='select your console'" href="ps3/index.html"><button class="pointer">PlayStation 3</button></a>&nbsp;
-<a onMouseOver="msgs.innerHTML='PS4 Jailbreak 5.05-9.00 fw'" onmouseout="msgs.innerHTML='select your console'" href="ps4/index.html"><button class="pointer">PlayStation 4</button></a>&nbsp;
-<a onMouseOver="msgs.innerHTML='PS5 Jailbreak 3.xx-4.xx fw'" onmouseout="msgs.innerHTML='select your console'" href="ps5/index.html"><button class="pointer">PlayStation 5</button></a>
-<br><br><br><br><br>
-<h1 id=msgs2 style='font-size:20px;margin:0;'>Media Social</h1>
-<br>
-<a href="https://www.facebook.com/mahrimadalamri" target="_blank"><button class="button">Facebook</button></a>&nbsp;
-<a href="https://justpaste.it/39die" target="_blank"><button class="button">Support Us</button></a>&nbsp;
-<a href="https://www.youtube.com/@magnumgame" target="_blank"><button class="button">YouTube</button></a>
 <br><br>
-<a href="https://www.magnumweb.my.id/" target="_blank"><button class="button">Download Game</button></a>
+<h1 id=msgs2>select your method</h1>
+<a href="ps5-403/netcat.html#payload=ps5-kstuff.bin"><button onMouseOver="msgs2.innerHTML='PS5 4.03 FW - Partial HEN to enable fake PS4 packages'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>PS5 4.03 FW</B></button></a>&nbsp;&nbsp;
+<a href="ps5jb/index.html"><button onMouseOver="msgs2.innerHTML='PS5 3.xx - 4.xx FW Host v1.04'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>PS5 3.xx - 4.xx FW</B></button></a>
 <div style="position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
-<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PSxploit Team</span >
+<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS3xploit Team</span >
 </div>
+<script>
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple")); PS4fw.innerHTML=""+UA+" Detected";
+</script>
 </body>
 </html>
