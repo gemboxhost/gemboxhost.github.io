@@ -32,9 +32,10 @@ else {
 </head>
 <body>
 <div id="menu">
-<h1>☆ Full Host Payload 6.72fw ☆</h1>
+<h1 id="msgs">Full Host Payload 6.72fw</h1>
+<hr>
 <br>
-<h1 id="msgs">status</h1>
+<h1 style="font-size: 20px;"><font color="green">Pass = <span id="passCounter"></span>&nbsp;&nbsp;&nbsp;&nbsp;<font color="yellow">status</span>&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">Fail = <span id="failCounter"></span></h1>
 <button class="btn" onclick="load_goldhen24b14()"> GoldHEN v2.4b14 </button>
 <button class="btn" onclick="load_hen()"> HEN v2.1.3 </button>
 <button class="btn" onclick="load_henb()"> HEN v2.1.3b </button>
@@ -58,22 +59,24 @@ else {
 <button class="btn" onclick="load_LinuxUSB()"> Linux USB </button>
 <button class="btn" onclick="load_LinuxBaikal()"> Linux Baikal </button>
 <button class="btn" onclick="load_webrte()"> WebRTE </button>
-<button class="btn" onclick="load_ps4debug()"> PS4 Debug </button>
-<br>
 <button class="btn" onclick="load_todex()"> ToDEX </button>
+<br>
+<button class="btn" onclick="load_ps4debug()"> PS4 Debug </button>
 <button class="btn" onclick="load_KernelDumper()"> Kernel Dumper </button>
 <button class="btn" onclick="load_orbistlbox()"> Orbis Toolbox </button>
 <button class="btn" onclick="load_webact()"> Web Activator </button>
 <br>
-<button class="btn" onclick="mods_group()"> Rockstar Mods </button>
+
+<button class="btn" onclick="mods_group()"> Games Mods </button>
 <button class="btn" onclick="load_fwspoof()"> Spoof Firmware </button><select id="fws1"></select><select id="fws2"></select>
 <button class="btn" onclick="load_fanthreshold()"> Fan Threshold </button><font color="white"><select id="tempC"></select>&#176;C
 <br>
 </div>
 <div id="tools">
-<h1>☆ Backup and Restore ☆</h1>
+<h1 id="msgs2">Backup and Restore </h1>
+<hr>
 <br>
-<h1 id="msgs2">status</h1>
+<h1 style="font-size: 18px;">Payloads</h1>
 <button class="btn" onclick="load_DBbackup()"> DB Backup </button>
 <button class="btn" onclick="load_DBrestore()"> DB Restore </button>
 <button class="btn" onclick="load_SDbackup()"> Save Data Backup </button>
@@ -89,18 +92,19 @@ else {
 <button class="btn" onclick="load_CacheBackup()"> Offline Cache Backup </button>
 <button class="btn" onclick="load_CacheRestore()"> Offline Cache Restore </button>
 <br>
-<button class="btn" onclick="load_menu()" style="margin-bottom: 241px;"> Back </button>
+<button class="btn" onclick="load_menu()" style="margin-bottom: 241px;"> Return </button>
 </div>
 <div id="mods">
-<h1>☆ Games Mods ☆</h1>
+<h1 id="msgs3">Games Mods </h1>
+<hr>
 <br>
-<h1 id="msgs3">status</h1>
+<h1 style="font-size:18px;">Payloads</h1>
 <button class="btn" onclick="load_ArabicGuy100()">  Arabic Guy 1.00 </button>
 <button class="btn" onclick="load_ArabicGuy127()"> Arabic Guy 1.27 </button>
 <button class="btn" onclick="load_ArabicGuy132()"> Arabic Guy 1.32 </button>
-<br>
 <button class="btn" onclick="load_Lamance()"> Lamance v0.9 - 1.38 </button>
 <button class="btn" onclick="load_WildeModz146()"> WildeModz-1.46 </button>
+<br>
 <button class="btn" onclick="load_WildeModz147()"> WildeModz-1.47 </button>
 <br>
 <button class="btn" onclick="load_Oysters100()"> RDR2 v1.00 </button>
@@ -109,7 +113,7 @@ else {
 <button class="btn" onclick="load_Oysters124()"> RDR2 v1.24 </button>
 <button class="btn" onclick="load_Oysters129()"> RDR2 v1.29 </button>
 <br>
-<button class="btn" onclick="load_menu()" style="margin-bottom: 241px;"> Back </button>
+<button class="btn" onclick="load_menu()" style="margin-bottom: 241px;"> Return </button>
 </div>
 <div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
 <span class="credit" >*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS4xploit Team</span >
