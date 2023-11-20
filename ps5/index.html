@@ -1,104 +1,18 @@
-<html>
-<head>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html><head>
 <title>PS5 Jailbreak | Magnum Game</title>
-<style type="text/css">
-body {
-    background-color: #0e0e14;
-	background-position: center;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    margin: auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
-button {
-    width: 210px;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border: solid 1px white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 300ms;
-    cursor: pointer;
-}
-button:hover {
-    border: solid 1px rgb(0, 100, 255);
-    box-shadow: inset 210px 0px 0px rgb(0, 73, 206);
-    animation: ani 1s;
-}
-@keyframes ani {
-    0% {
-       box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
-       }
-    100% {
-       box-shadow: inset 210px 0px 0px rgb(0, 73, 206);
-       }
-}
-.credit {
-    color:white;
-	text-shadow: 4px 4px 4px black;
-}
-.titleDiv {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 5px;
-    padding: 10px;
-    animation: colorChangeTD 10s infinite;
-}
-#date {
-    float: left;
-}
-.title {
-    text-align: center;
-}
-#clock {
-    float: right;
-}
-#msgs2 {
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 4px 4px 4px black;
-	color: #FFD700;
-}
-</style>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
+<link rel="stylesheet" href="../style.css">
 </head>
-<div class="titleDiv">
-        <span id="clock">{CLOCK}</span>
-        <span class="title">PlayStation 5 Jailbreak&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span id="date">{DATE}</span>
-    </div>
-<br><br>
-<h1 id=msgs2>select your method</h1>
-<a href="ps5-403/netcat.html#payload=ps5-kstuff.bin"><button onMouseOver="msgs2.innerHTML='PS5 4.03 FW - Partial HEN to enable fake PS4 packages'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>PS5 4.03 FW</B></button></a>&nbsp;&nbsp;
-<a href="ps5jb/index.html"><button onMouseOver="msgs2.innerHTML='PS5 3.xx - 4.xx FW Host v1.04'"; onmouseout="msgs2.innerHTML='select your method'" type="button"><B>PS5 3.xx - 4.xx FW</B></button></a>
-<div style="position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
-<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS3xploit Team</span >
+<body>
+<h1>☆ Host PS5 Jailbreak ☆</h1>
+<br>
+<h1 id="msgs">status</h1>
+<div id="menu">
+<a href="ps5-403/netcat.html#payload=ps5-kstuff.bin"><button class="btn" onmouseover="msgs.innerHTML='PS5 4.03 FW - Partial HEN to enable fake PS4 packages'" onmouseout="msgs.innerHTML='status'"> PS5 4.03 </button></a>
+<a href="ps5jb/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS5 3.xx - 4.xx FW Host v1.04'" onmouseout="msgs.innerHTML='status'"> PS5 3.xx - 4.xx </button></a>
 </div>
-<script>
-UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple")); PS4fw.innerHTML=""+UA+" Detected";
-</script>
+<div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
+<span class="credit" >*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS4xploit Team</span >
+</div>
 </body>
 </html>

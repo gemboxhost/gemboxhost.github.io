@@ -1,119 +1,40 @@
-
-<html>
-<head>
-<meta charset="utf-8" />
+<!DOCTYPE html>
+<html><head>
 <title>Magnum Game Host</title>
-<style type="text/css">
-body {
-    background-color: #0e0e14;
-	background-position: center;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    margin: auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
-button {
-    width: 210px;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border: solid 1px white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 300ms;
-    cursor: pointer;
-}
-button:hover {
-    border: solid 1px rgb(0, 100, 255);
-    box-shadow: inset 210px 0px 0px rgb(0, 73, 206);
-    animation: ani 1s;
-}
-@keyframes ani {
-    0% {
-       box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
-       }
-    100% {
-       box-shadow: inset 210px 0px 0px rgb(0, 73, 206);
-       }
-}
-.credit {
-    color:white;
-	text-shadow: 2px 2px #000000;
-}
-.titleDiv {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 5px;
-    padding: 10px;
-    animation: colorChangeTD 10s infinite;
-}
-#date {
-    float: left;
-}
-.title {
-    text-align: center;
-}
-#clock {
-    float: right;
-}
-#msgs {
-    color: #FFD700;
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 4px 4px 4px black;
-}
-#msgs2 {
-    color: #FFD700;
-    font-size: 20px;
-    font-family: comic sans ms;
-	text-shadow: 4px 4px 4px black;
-}
-</style>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
-</head>   
-<div class="titleDiv">
-        <span id="clock">{CLOCK}</span>
-        <span class="title">Magnum Game Host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span id="date">{DATE}</span>
-    </div>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>☆ Magnum Game Host ☆</h1>
+<br>
+<h1 id="msgs">status</h1>
+<div id="menu">
+<a href="ps3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS3 Jailbreak 4.82-4.90 fw'" onmouseout="msgs.innerHTML='status'"> PlayStation 3 </button></a>
+<a href="ps4/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 Jailbreak 5.05-9.00 fw'" onmouseout="msgs.innerHTML='status'"> PlayStation 4 </button></a>
+<a href="ps5/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS5 Jailbreak 3.xx-4.xx fw'" onmouseout="msgs.innerHTML='status'"> PlayStation 5 </button></a>
 <br><br><br>
-<h1 id=msgs style='font-size:20px;margin:0;'>select your console</h1>
-<br>
-<a onMouseOver="msgs.innerHTML='PS3 Jailbreak 4.82-4.90 fw'" onmouseout="msgs.innerHTML='select your console'" href="ps3/index.html"><button class="pointer">PlayStation 3</button></a>&nbsp;
-<a onMouseOver="msgs.innerHTML='PS4 Jailbreak 5.05-9.00 fw'" onmouseout="msgs.innerHTML='select your console'" href="ps4/index.html"><button class="pointer">PlayStation 4</button></a>&nbsp;
-<a onMouseOver="msgs.innerHTML='PS5 Jailbreak 3.xx-4.xx fw'" onmouseout="msgs.innerHTML='select your console'" href="ps5/index.html"><button class="pointer">PlayStation 5</button></a>
-<br><br><br><br><br>
-<h1 id=msgs2 style='font-size:20px;margin:0;'>Media Social</h1>
-<br>
-<a href="https://www.facebook.com/magnumgamez" target="_blank"><button class="button">Facebook</button></a>&nbsp;
-<a href="https://justpaste.it/39die" target="_blank"><button class="button">Support Us</button></a>&nbsp;
-<a href="https://www.youtube.com/@magnumgame" target="_blank"><button class="button">YouTube</button></a>
-<br><br>
-<a href="https://www.magnumweb.my.id/" target="_blank"><button class="button">Download Game</button></a>&nbsp;
-<a href="https://www.magnumhost.my.id/tema" target="_blank"><button class="button">Theme PlayStation</button></a>
-<div style="position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
-<span class="credit" >*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PSxploit Team</span >
+<button class="btn btn-alt" onmouseover="msgs.innerHTML='Jika kalian suka host ini, kalian dapat mendukung saya dengan donasi.'" onmouseout="msgs.innerHTML='status'" onclick="donations()"> Donasi </button>
+<a href="https://www.magnumweb.my.id/" target="_blank"><button class="btn btn-alt" onmouseover="msgs.innerHTML='Download Game PlayStation'" onmouseout="msgs.innerHTML='status'"> Game </button></a>
+<a href="https://www.magnumhost.my.id/tema" target="_blank"><button class="btn btn-alt" onmouseover="msgs.innerHTML='Download Theme Permanent'" onmouseout="msgs.innerHTML='status'"> Theme </button></a>
 </div>
+<div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
+<span class="credit" >*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS4xploit Team</span >
+</div>
+<div id="qris">
+<h1 style="font-size: 18px;color: yellow;">Donate with QRIS :</h1>
+<img src="donasi.jpeg" width="300" height="300">
+<br>
+<button class="btn" onclick="load_menu()"> Back to Menu </button>
+</div>
+<script>
+function donations(){
+document.getElementById("qris").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("qris").style.display = "none";
+}
+</script>
 </body>
 </html>

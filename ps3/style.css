@@ -1,0 +1,11 @@
+html {
+    background-color: #0e0e14;
+    color: white;
+}
+
+h1 {
+    text-shadow: 4px 4px 4px black;
+    font-size: 30px;
+    color: white;
+	text-align:left;
+}

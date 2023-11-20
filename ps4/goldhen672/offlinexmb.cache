@@ -1,11 +1,12 @@
 CACHE MANIFEST 
 # v2.5.7 Self-Host 
 
+../../style.css
+../../img.jpg
 exp_loader.js
 672.bin
 index.html
 jb.js
-Style.css
 
 NETWORK:
 *
