@@ -17,40 +17,37 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <br>
 <h1 id="msgs">status</h1>
 <div id="menu">
-<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.3 for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_goldhen23()"> GoldHEN v2.3 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b14 for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_goldhen24b14()"> GoldHEN v2.4b14 </button>
+<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.3 for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_goldhen23()"> GoldHEN v2.3 </button>
 <button class="btn" onmouseover="msgs.innerHTML='Send a Payload using port 9020'" onmouseout="msgs.innerHTML='status'" onclick="load_binloader()"> Bin Loader </button>
 <br>
-<button class="btn" onmouseover="msgs.innerHTML='Orbis ToolBox Alpha 1190 for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_toolbox()"> Orbis Toolbox </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump Games to USB Drive'" onmouseout="msgs.innerHTML='status'" onclick="load_dumper()"> App Dumper </button>
+<button class="btn" onmouseover="msgs.innerHTML='Enable Some Debugging Functions Available on TestKit'" onmouseout="msgs.innerHTML='status'" onclick="load_todex()"> ToDex </button>
+<button class="btn" onmouseover="msgs.innerHTML='Dump Games to USB Drive'" onmouseout="msgs.innerHTML='status'" onclick="load_dumper()"> App-Dumper </button>
 <button class="btn" onmouseover="msgs.innerHTML='Access this console Through FTP (Be careful what you do)'" onmouseout="msgs.innerHTML='status'" onclick="load_ftp()"> FTP </button>
 <button class="btn" onmouseover="msgs.innerHTML='Transfer Installed Games to USB Drive in exFAT'" onmouseout="msgs.innerHTML='status'" onclick="load_app2usb()"> App2USB </button>
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='Create a Backup of the Database and Users to a USB Drive'" onmouseout="msgs.innerHTML='status'" onclick="load_dbackup()"> DB Backup </button>
 <button class="btn" onmouseover="msgs.innerHTML='Restore a Backup of the Database and Users from a USB Drive'" onmouseout="msgs.innerHTML='status'" onclick="load_dbrestore()"> DB Restore </button>
-<button class="btn" onmouseover="msgs.innerHTML='Enable Firmware Updates'" onmouseout="msgs.innerHTML='status'" onclick="load_enablebUpdates()"> Enable Updates </button>
-<button class="btn" onmouseover="msgs.innerHTML='Disable Firmware Updates'" onmouseout="msgs.innerHTML='status'" onclick="load_disableUpdates()"> Disable Updates </button>
+<button class="btn" onmouseover="msgs.innerHTML='Enable System Updates'" onmouseout="msgs.innerHTML='status'" onclick="load_enablebUpdates()"> Enable Updates </button>
+<button class="btn" onmouseover="msgs.innerHTML='Disable System Updates'" onmouseout="msgs.innerHTML='status'" onclick="load_disableUpdates()"> Disable Updates </button>
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='Enable/Disable Browser History.'" onmouseout="msgs.innerHTML='status'" onclick="load_historyBlocker()"> History Blocker </button>
 <button class="btn" onmouseover="msgs.innerHTML='Dump a Console Kernel to a USB Drive'" onmouseout="msgs.innerHTML='status'" onclick="load_kernelDump()"> Kernel Dumper </button>
 <button class="btn" onmouseover="msgs.innerHTML='Dump a Kernel Module to a USB Drive'" onmouseout="msgs.innerHTML='status'" onclick="load_moduleDump()"> Module Dumper </button>
 <button class="btn" onmouseover="msgs.innerHTML='PS4 Debug for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_ps4debug()"> PS4 Debug </button>
 <br>
-<button class="btn" onmouseover="msgs.innerHTML='Disables the ASLR (Address space layout randomization)'" onmouseout="msgs.innerHTML='status'" onclick="load_disbAslr()"> Disable ASLR </button>
-<button class="btn" onmouseover="msgs.innerHTML='Disable IDU Mode if you have activated it by mistake'" onmouseout="msgs.innerHTML='status'" onclick="load_exitidu()"> Exit IDU </button>
-<button class="btn" onmouseover="msgs.innerHTML='Renames (fake) RIFs to (free) RIFs'" onmouseout="msgs.innerHTML='status'" onclick="load_rifRen()"> RIF Renamer </button>
-<button class="btn" onmouseover="msgs.innerHTML='Enable Some Debugging Functions Available on TestKit'" onmouseout="msgs.innerHTML='status'" onclick="load_todex()"> ToDex </button>
-<br>
-<button class="btn" onmouseover="msgs.innerHTML='Required to Activate Cheats Through the PS4 Trainer Website'" onmouseout="msgs.innerHTML='status'" onclick="load_webrte()"> WebRTE </button>
-<a href="webactivator.html"><button class="btn" onmouseover="msgs.innerHTML='Activate Your User Account from the Console Browser'" onmouseout="msgs.innerHTML='status'"> Web Activator </button></a>
 <button class="btn" onmouseover="msgs.innerHTML='Linux Loaders Menu'" onmouseout="msgs.innerHTML='status'" onclick="linux_group()"> Linux Loaders </button>
+<button class="btn" onmouseover="msgs.innerHTML='Disables the ASLR (Address space layout randomization)'" onmouseout="msgs.innerHTML='status'" onclick="load_disbAslr()"> Disable ASLR </button>
+<button class="btn" onmouseover="msgs.innerHTML='Renames (fake) RIFs to (free) RIFs'" onmouseout="msgs.innerHTML='status'" onclick="load_rifRen()"> RIF Renamer </button>
 <button class="btn" onmouseover="msgs.innerHTML='Permanent UART for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_permUart()"> Permanent UART </button>
 <br>
-<button class="btn" onclick="mods_group()"> Online Modz </button>
-<button class="btn" onmouseover="msgs.innerHTML='Modify PS4 FAN Speed'" onmouseout="msgs.innerHTML='status'" onclick="load_fanthreshold()"> Fan Threshold </button><select id="tempC"></select>&#176;C
+<button class="btn" onclick="mods_group()"> Rockstar Modz </button>
+<button class="btn" onmouseover="msgs.innerHTML='Required to Activate Cheats Through the PS4 Trainer Website'" onmouseout="msgs.innerHTML='status'" onclick="load_webrte()"> WebRTE </button>
+<a href="webactivator.html"><button class="btn" onmouseover="msgs.innerHTML='Activate Your User Account from the Console Browser'" onmouseout="msgs.innerHTML='status'"> Web Activator </button></a>
+<button class="btn" onmouseover="msgs.innerHTML='Orbis ToolBox Alpha 1190 for 9.00 FW'" onmouseout="msgs.innerHTML='status'" onclick="load_toolbox()"> Orbis Toolbox </button>
 </div>
 <div id="lnx">
-<button class="btn" onmouseover="msgs.innerHTML='Identify the Southbridge of your Console for the Linux Installation'" onmouseout="msgs.innerHTML='status'" onclick="load_southbridge()" style='width: 300px;'"> Whos that Southbridge </button>
+<button class="btn" onmouseover="msgs.innerHTML='Identify the Southbridge of your Console for the Linux Installation'" onmouseout="msgs.innerHTML='status'" onclick="load_southbridge()"> Whos that Southbridge </button>
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='Load Linux with 1GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='status'" onclick="load_linux1gb()"> Linux 1GB </button>
 <button class="btn" onmouseover="msgs.innerHTML='Load Linux with 2GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='status'" onclick="load_linux2gb()"> Linux 2GB </button>
@@ -69,17 +66,16 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.27 (L1 + R1)'" onmouseout="msgs.innerHTML='status'" onclick="load_arabicGuy127()"> Arabic Guy v1.27 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.32 (L1 + R1)'" onmouseout="msgs.innerHTML='status'" onclick="load_arabicGuy132()"> Arabic Guy v1.32 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.33 (L1 + R1)'" onmouseout="msgs.innerHTML='status'" onclick="load_arabicGuy133()"> Arabic Guy v1.33 </button>
-<br>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Expulsion v4.0 - 1.38'" onmouseout="msgs.innerHTML='status'" onclick="load_Expulsion()"> Expulsion v4.0 - 1.38 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Lamance v0.9 - 1.38 (Right + Square)'" onmouseout="msgs.innerHTML='status'" onclick="load_Lamance()"> Lamance v0.9 - 1.38 </button>
+<br>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.32'" onmouseout="msgs.innerHTML='status'" onclick="load_WildeModz132()"> WildeModz-1.32 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.33'" onmouseout="msgs.innerHTML='status'" onclick="load_WildeModz133()"> WildeModz-1.33 </button>
-<br>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.38'" onmouseout="msgs.innerHTML='status'" onclick="load_WildeModz138()"> WildeModz-1.38 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.46'" onmouseout="msgs.innerHTML='status'" onclick="load_WildeModz146()"> WildeModz-1.46 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.47'" onmouseout="msgs.innerHTML='status'" onclick="load_WildeModz147()"> WildeModz-1.47 </button>
-<button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Beef Queef Mod v1.33'" onmouseout="msgs.innerHTML='status'" onclick="load_beefQueef133()"> Beef Queef v1.33 </button>
 <br>
+<button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Beef Queef Mod v1.33'" onmouseout="msgs.innerHTML='status'" onclick="load_beefQueef133()"> Beef Queef v1.33 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Beef Queef Mod v1.34'" onmouseout="msgs.innerHTML='status'" onclick="load_beefQueef134()"> Beef Queef v1.34 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Beef Queef Mod v1.38d'" onmouseout="msgs.innerHTML='status'" onclick="load_beefQueef138()"> Beef Queef v1.38d </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Beef Queef Mod v1.47'" onmouseout="msgs.innerHTML='status'" onclick="load_beefQueef147()"> Beef Queef v1.47 </button>
