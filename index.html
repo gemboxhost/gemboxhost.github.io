@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Magnum Host - Updating</title>
-    <style>
-        *{
-            transition: all 0.6s;
-        }
-        html {
-            height: 100%;
-        }
-        body{
-            font-family: 'Lato', sans-serif;
-            color: #888;
-            margin: 0;
-        }
-        #main{
-            display: table;
-            width: 100%;
-            height: 100vh;
-            text-align: center;
-        }
-        .fof{
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .fof h1{
-            font-size: 50px;
-            display: inline-block;
-            padding-right: 12px;
-            animation: type .5s alternate infinite;
-        }
-        @keyframes type{
-            from{box-shadow: inset -3px 0px 0px #888;}
-            to{box-shadow: inset -3px 0px 0px transparent;}
-        }
-        .subText {
-            font-size: 20px;
-        }
-    </style>
+<html><head>
+<title>Magnum Game Host</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="main">
-    <div class="fof">
-        <h1>We are updating Magnum Host</h1>
-        <div class="subText">Please try again after few minutes</div>
-    </div>
+<h1 id="msgs">Magnum Game Host</h1>
+<br><br>
+<div id="menu">
+<h1 style="font-size: 20px;color: yellow;">Select Your Console</h1>
+<a href="hen490/index.html"><button class="btn" onmouseover="msgs.innerHTML='HEN Official Installer 4.88-4.90 hfw'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS3 HEN Official </button></a>
+<a href="hen490mod/index.html"><button class="btn" onmouseover="msgs.innerHTML='HEN Unofficial Installer 4.82-4.90 hfw'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS3 HEN Unofficial </button></a>
+<a href="flash490/index.html"><button class="btn" onmouseover="msgs.innerHTML='Flash/Downgrade PS3 HFW 4.90.1'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS3 Flash 4.90 </button></a>
+<br>
+<a href="r672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS4 6.72 Light </button></a>
+<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS4 6.72 Full </button></a>
+<a href="g672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.02 FW Host v1.4'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS4 6.72 GoldHEN </button></a>
+<br>
+<a href="r900/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS4 9.00 Light </button></a>
+<a href="900/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS4 9.00 Full </button></a>
+<a href="g900/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.02 FW Host v1.4'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS4 9.00 GoldHEN </button></a>
+<br>
+<a href="psphwoar/index.html"><button class="btn btn-ps5" onmouseover="msgs.innerHTML='PS-Phwoar! Leeful Host GoldHEN v2.4b14 by Magnum Game'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS-Phwoar! 5.05 </button></a>
+<a href="psphive672/index.html"><button class="btn btn-ps5" onmouseover="msgs.innerHTML='PS-Phive! Leeful Host GoldHEN v2.4b14 by Magnum Game'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS-Phive! 6.72 </button></a>
+<a href="psphive900/index.html"><button class="btn btn-ps5" onmouseover="msgs.innerHTML='PS-Phive! Leeful Host GoldHEN v2.4b14 by Magnum Game'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS-Phive! 9.00 </button></a>
+<br>
+<a href="ps5-403/netcat.html#payload=ps5-kstuff.bin"><button class="btn" onmouseover="msgs.innerHTML='PS5 4.03 FW - Partial HEN to enable fake PS4 packages'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS5 4.03 FW </button></a>
+<a href="ps5jb/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS5 3.xx - 4.xx FW Host v1.04'" onmouseout="msgs.innerHTML='Magnum Game Host'"> PS5 3.xx - 4.xx FW </button></a>
+<br><br>
+<button class="btn btn-ps5" onmouseover="msgs.innerHTML='If you like my work you can support me with a donation.'" onmouseout="msgs.innerHTML='Magnum Game Host'" onclick="donations()"> For Donations </button>
 </div>
+<div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
+<span class="credit" >*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PSxploit Team</span >
+</div>
+<div id="donasi">
+<h1 style="font-size: 18px;color: yellow;">Donate with QRIS:</h1>
+<img src="donasi.jpeg" width="350" height="350">
+<br>
+<h1 style="font-size: 18px;">Terima kasih atas DONASI kalian</h1>
+<button class="btn" onclick="load_menu()"> Back </button>
+</div>
+<script>
+function donations(){
+document.getElementById("donasi").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("donasi").style.display = "none";
+}
+</script>
 </body>
 </html>
