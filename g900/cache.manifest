@@ -3,9 +3,10 @@ CACHE MANIFEST
 CACHE: 
 ../img.jpg
 ../style.css
-goldhen_2.4b14.bin
 index.html
-int64.js
-kexploit.js
-rop.js
-webkit.js
+goldhen_2.4b14.bin
+
+NETWORK: 
+* 
+
+# Date: 2022-06-04T01:59:00Z:
