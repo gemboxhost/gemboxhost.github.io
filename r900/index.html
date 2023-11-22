@@ -1259,7 +1259,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("Insert the Flash Drive. Click OK after the USB Notification appears");
+  alert("Insert USB Drive and click OK after You See The Popup Notification.<br>After jailbreak remove USB from PS4.");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -1283,7 +1283,7 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            alert("Jailbreak done. Remove Flash Drive from PS4");
+            alert("Jailbreak done. Remove USB Drive from PS4");
             sessionStorage.Exploit="yes";
             setTimeout(load_pocj, 50);
         }
