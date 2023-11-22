@@ -33,11 +33,11 @@ function makeUI()
 {
     var root = document.createElement('div');
     root.style.position = 'absolute';
-    root.style.top = root.style.left = 0;
-    root.style.width = root.style.height = '100%';
+    root.style.top =  100;
+    root.style.left = 400;
+    root.style.width = root.style.height = '50%';
     root.style.zIndex = 1000;
-    root.style.background = '#24272b';
-    root.style.color = "yellow";
+    root.style.background = '#1A1920';
     var p = document.createElement('p');
     root.appendChild(p);
     var italic = document.createElement('i');
