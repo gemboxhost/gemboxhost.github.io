@@ -8,11 +8,10 @@ var _ = malloc_nogc.pop();
 var _ = malloc_nogc.pop();
 var _ = malloc_nogc.pop();
 if (main_ret == 179 || main_ret == 0){
-	localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
-	setTimeout(function(){var script = document.createElement('script');script.src ="exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}, 1500);
-    } 
-	else {
-	localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
-	window.msgs.innerHTML="Failed to Load! - Restart your Console.";
-    }
+localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
+}
+else {
+localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
+alert("Jailbreak fail, restart your ps4 and try again");
+     }
 }
