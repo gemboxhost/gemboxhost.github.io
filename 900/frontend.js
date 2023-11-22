@@ -36,8 +36,7 @@ function makeUI()
     root.style.top = root.style.left = 0;
     root.style.width = root.style.height = '100%';
     root.style.zIndex = 1000;
-    root.style.background = '#24272b';
-    root.style.color = "yellow";
+    root.style.background = 'white';
     var p = document.createElement('p');
     root.appendChild(p);
     var italic = document.createElement('i');
