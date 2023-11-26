@@ -1,12 +1,12 @@
 CACHE MANIFEST 
-# v2.5.7 Self-Host 
 
-../img.jpg
-../style.css
+CACHE: 
 exp_loader.js
 goldhen_2.4b14.bin
+img.jpg
 index.html
 jb.js
+Style.css
 
-NETWORK:
-*
+NETWORK: 
+* 
