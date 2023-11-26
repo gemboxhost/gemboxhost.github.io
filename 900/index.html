@@ -1,8 +1,215 @@
 <html manifest="Cache.manifest">
 <head>
+<style>
+    html, body{
+background-image: url('img.jpg');
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+margin:auto;
+font-family:sans-serif;
+font-size:20px;
+font-weight:lighter;
+text-align:left;
+color:#FFFFFF;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ .content {
+  width:90%;
+  height:15%;
+  margin-left:3.5%;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  margin-top:0%;
+  font-size:25px;
+  text-align:center;
+  border-radius:30px;
+  padding:20px;
+  line-height:12px;
+  position:absolute;bottom:0px;
+ }
+ .title {
+  font-size:40px;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-weight:bolder;
+  margin-bottom:10px;
+ }
+ .yellow {
+  color:yellow;
+  text-shadow: 4px 4px 4px black;
+ }
+ .hue {
+  color:yellow;
+  padding:10px;
+  border-radius:10px;
+  animation:hue 5s linear infinite;
+  -webkit-animation: hue 5s linear infinite;
+  box-shadow: 0px 0px 50px yellow;
+  color:white;
+  background:rgba(255,255,0,0.4);
+ }
+ .hue:hover{
+  color:yellow;
+  background:transparent;
+ }
+ @keyframes hue{
+ 0%{
+ filter:hue-rotate(0deg);
+ -webkit-filter:hue-rotate(0deg);
+ }
+ 10%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 20%{
+ box-shadow: 1px 1px 50px yellow;
+ }
+ 30%{
+ box-shadow: 1px 0px 50px yellow;
+ }
+ 40%{
+  box-shadow: 1px -1px 50px yellow;
+ }
+ 50%{
+ box-shadow: 0px -1px 50px yellow;
+ }
+ 60%{
+ box-shadow: -1px -1px 50px yellow;
+ }
+ 70%{
+ box-shadow: -1px 0px 50px yellow;
+ }
+ 80%{
+ box-shadow: -1px 1px 50px yellow;
+ }
+ 90%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 100%{
+ filter:hue-rotate(360deg);
+ -webkit-filter:hue-rotate(360deg);
+ }
+ }
+ .text {
+  padding-bottom:50px;
+ }
+  .back {
+   font-size:25px;
+   margin-top:10px;
+   display:block;
+   line-height:55px;
+   width:20%;
+   text-decoration:none;
+   height:50px;
+   background:white;
+   color:black;
+   border-radius:15px;
+  }
+  .back:hover{
+   border:2px solid white;
+   background:transparent;
+   box-sizing:border-box;
+   color:white;
+  }
+ #psip {
+  text-align: center;
+  margin-left: 38%;
+  margin-right: auto;
+  width:15%;
+  display:flex;
+  position: absolute;
+  
+  background: rgba(0, 0, 0, 0.500);
+  border-radius: 2em;
+  border: none;
+  padding: 0.8em;
+  
+  color: #ffffff;
+  padding-left: 1.5em;
+  
+  outline: none;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  backdrop-filter: blur(5px);
+}
+/* Modal Content */
+.modal-content {
+  font-family: BFARNAZ;
+  font-size: 18px;
+  position: relative;
+  background-color: #dddddd;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+button {
+background-color: black;
+    color: rgb(255, 255, 255);
+    width: 225px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px white;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+border: solid 1px rgb(0, 100, 255);
+    box-shadow: inset 225px 0px 0px rgb(0, 73, 206);
+    animation: ani 1s;
+}
+}
+@keyframes ani {
+    0% {
+       box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
+       }
+    100% {
+       box-shadow: inset 225px 0px 0px rgb(0, 73, 206);
+       }
+}
+
+hr {
+padding:0;
+margin:0;
+opacity:0.7;
+}
+
+#progress {
+ font-weight:bold;
+ text-shadow: 4px 4px 4px black;
+
+ font-size:17px;
+}
+.pointer {cursor: pointer;}
+
+
+    </style>
 <meta charset="utf-8">
 <title>Full Host 9.00fw | Magnum Game</title>
-<link rel="stylesheet" href="../style.css">
 		<script>
 			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
 			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
@@ -70,17 +277,17 @@ else if (out_jb == "BinLD") {
 
 
 function allset() {
-window.msgs.innerHTML= LoadedMSG
+window.progress.innerHTML= LoadedMSG
 alert(LoadedMSG);
 }
 
 function Binset() {
-window.msgs.innerHTML="Payload Loaded. Send payloads to port 9020";
+window.progress.innerHTML="Payload Loaded. Send payloads to port 9020";
 alert("Payload Loaded. Send payloads to port 9020");
 }
 
 function Mset() {
-window.msgs.innerHTML="Payload Loaded. Send payloads to port 9021";
+window.progress.innerHTML="Payload Loaded. Send payloads to port 9021";
 alert("Payload Loaded. Send payloads to port 9021");
 }
 
@@ -147,7 +354,7 @@ function load_pocB(){
 }
 
 function Linux1N(){
-msgs.innerHTML="LinuxLoader 1GB loading... please wait";
+progress.innerHTML="LinuxLoader 1GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "payload-900-1gb.bin";
 out_jb = "Linux";
@@ -156,7 +363,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux2N(){
-msgs.innerHTML="LinuxLoader 2GB loading... please wait";
+progress.innerHTML="LinuxLoader 2GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "payload-900-2gb.bin";
 out_jb = "Linux";
@@ -165,7 +372,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux3N(){
-msgs.innerHTML="LinuxLoader 3GB loading... please wait";
+progress.innerHTML="LinuxLoader 3GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "payload-900-3gb.bin";
 out_jb = "Linux";
@@ -174,7 +381,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux4N(){
-msgs.innerHTML="LinuxLoader 4GB loading... please wait";
+progress.innerHTML="LinuxLoader 4GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "payload-900-4gb.bin";
 out_jb = "Linux";
@@ -183,7 +390,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux5N(){
-msgs.innerHTML="LinuxLoader 5GB loading... please wait";
+progress.innerHTML="LinuxLoader 5GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "payload-900-5gb.bin";
 out_jb = "Linux";
@@ -192,7 +399,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux1(){
-msgs.innerHTML="LinuxLoader 1GB loading... please wait";
+progress.innerHTML="LinuxLoader 1GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "LinuxLoader.bin";
 out_jb = "Linux";
@@ -201,7 +408,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux2(){
-msgs.innerHTML="LinuxLoader 2GB loading... please wait";
+progress.innerHTML="LinuxLoader 2GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "LinuxLoader2gb.bin";
 out_jb = "Linux";
@@ -210,7 +417,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux3(){
-msgs.innerHTML="LinuxLoader 3GB loading... please wait";
+progress.innerHTML="LinuxLoader 3GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "LinuxLoader3gb.bin";
 out_jb = "Linux";
@@ -219,7 +426,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux4(){
-msgs.innerHTML="LinuxLoader 4GB loading... please wait";
+progress.innerHTML="LinuxLoader 4GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "LinuxLoader4gb.bin";
 out_jb = "Linux";
@@ -228,7 +435,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux5(){
-msgs.innerHTML="LinuxLoader 5GB loading... please wait";
+progress.innerHTML="LinuxLoader 5GB loading... please wait";
 LoadedMSG="LinuxLoader Loaded";
 PLfile = "LinuxLoader5gb.bin";
 out_jb = "Linux";
@@ -237,7 +444,7 @@ if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_poc2();}
 }
 
 function Linux6(){
-msgs.innerHTML="Whos That Southbridge loading... please wait";
+progress.innerHTML="Whos That Southbridge loading... please wait";
 LoadedMSG="Whos That Southbridge Loaded";
 out_jb = "Gold";
 PLfile = "wtsb.bin";
@@ -245,7 +452,7 @@ PLfile = "wtsb.bin";
 }
 
 function Mira(){
-msgs.innerHTML="Mira loading... please wait";
+progress.innerHTML="Mira loading... please wait";
 LoadedMSG="Mira Loaded";
 setTimeout(function(){
 runScript('netcat.js');
@@ -260,16 +467,40 @@ runScript('relocator.js');
 }
 
 
+function goldhen2(){
+    progress.innerHTML="Goldhen 2.0b2 loading... please wait";
+    LoadedMSG="GoldHEN 2.0b2 Loaded";
+    PLfile = "goldhen2b2.bin";
+    out_jb = "Gold";
+    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
+}
+
+function goldhen222(){
+    progress.innerHTML="Goldhen 2.2.2 loading... please wait";
+    LoadedMSG="GoldHEN 2.2.2 Loaded";
+    PLfile = "goldhen_2.2.2_900.bin";
+    out_jb = "Gold";
+    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
+}
+
+function goldhen224(){
+    progress.innerHTML="Goldhen 2.2.4 loading... please wait";
+    LoadedMSG="GoldHEN 2.2.4 Loaded";
+    PLfile = "goldhen_2.2.4_900.bin";
+    out_jb = "Gold";
+    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
+}
+
 function goldhen23(){
-    msgs.innerHTML="Goldhen 2.3 loading... please wait";
+    progress.innerHTML="Goldhen 2.3 loading... please wait";
     LoadedMSG="GoldHEN 2.3 Loaded";
     PLfile = "goldhen_2.3_900.bin";
     out_jb = "Gold";
     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
 }
 
-function goldhen24(){
-    msgs.innerHTML="Goldhen 2.4b14 loading... please wait";
+function goldhen212(){
+    progress.innerHTML="Goldhen 2.4b14 loading... please wait";
     LoadedMSG="GoldHEN 2.4b14 Loaded";
     PLfile = "goldhen_2.4b14.bin";
     out_jb = "Gold";
@@ -277,318 +508,300 @@ function goldhen24(){
 }
 
 function load_PS4Debug(){
-    msgs.innerHTML="PS4Debug loading... please wait"; LoadedMSG="PS4Debug Loaded";
+    progress.innerHTML="PS4Debug loading... please wait"; LoadedMSG="PS4Debug Loaded";
     PLfile = "ps4debug.bin.bz2";
     out_jb = "AllPL";
     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_permanentuart(){
-    msgs.innerHTML="permanentuart loading... please wait"; LoadedMSG="permanentuart Loaded";
+    progress.innerHTML="permanentuart loading... please wait"; LoadedMSG="permanentuart Loaded";
     PLfile = "permanentuart.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_App2USB(){
-    msgs.innerHTML="app2usb loading... please wait"; LoadedMSG="app2usb Loaded";
+    progress.innerHTML="app2usb loading... please wait"; LoadedMSG="app2usb Loaded";
     PLfile = "app2usb.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_BackupDB(){
-    msgs.innerHTML="backupdb loading... please wait"; LoadedMSG="backupdb Loaded";
+    progress.innerHTML="backupdb loading... please wait"; LoadedMSG="backupdb Loaded";
     PLfile = "backupdb.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_pkgb(){
-    msgs.innerHTML="PKG Backup loading... please wait"; LoadedMSG="PKG Backup Loaded";
+    progress.innerHTML="PKG Backup loading... please wait"; LoadedMSG="PKG Backup Loaded";
     PLfile = "pkg-backup.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_DumperG(){
-    msgs.innerHTML="Dumper Game loading... please wait"; LoadedMSG="Dumper Game Loaded";
+    progress.innerHTML="Dumper Game loading... please wait"; LoadedMSG="Dumper Game Loaded";
     PLfile = "DumperG.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_DumperU(){
-    msgs.innerHTML="Dumper Game Update loading... please wait"; LoadedMSG="Dumper Game Update Loaded";
+    progress.innerHTML="Dumper Game Update loading... please wait"; LoadedMSG="Dumper Game Update Loaded";
     PLfile = "DumperU.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_DumperMGU(){
-    msgs.innerHTML="Dumper Merged Games and Update loading... please wait"; LoadedMSG="Dumper Merged Games and Update Loaded";
+    progress.innerHTML="Dumper Merged Games and Update loading... please wait"; LoadedMSG="Dumper Merged Games and Update Loaded";
     PLfile = "DumperMGU.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_DumperSGU(){
-    msgs.innerHTML="Dumper Seperate Games and Update loading... please wait"; LoadedMSG="Dumper Seperate Games and Update Loaded";
+    progress.innerHTML="Dumper Seperate Games and Update loading... please wait"; LoadedMSG="Dumper Seperate Games and Update Loaded";
     PLfile = "DumperSGU.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_KernelDumper(){
-    msgs.innerHTML="kerneldumper loading... please wait"; LoadedMSG="kerneldumper Loaded";
+    progress.innerHTML="kerneldumper loading... please wait"; LoadedMSG="kerneldumper Loaded";
     PLfile = "kerneldumper.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_ModuleDumper(){
-    msgs.innerHTML="ModuleDumper loading... please wait"; LoadedMSG="ModuleDumper Loaded";
+    progress.innerHTML="ModuleDumper loading... please wait"; LoadedMSG="ModuleDumper Loaded";
     PLfile = "mdumper.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_RestoreDB(){
-    msgs.innerHTML="RestoreDB loading... please wait"; LoadedMSG="RestoreDB Loaded";
+    progress.innerHTML="RestoreDB loading... please wait"; LoadedMSG="RestoreDB Loaded";
     PLfile = "restoredb.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_DisableASLR(){
-    msgs.innerHTML="DisableASLR loading... please wait"; LoadedMSG="DisableASLR Loaded";
+    progress.innerHTML="DisableASLR loading... please wait"; LoadedMSG="DisableASLR Loaded";
     PLfile = "disableaslr.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_DisableUpdates(){
-    msgs.innerHTML="DisableUpdates loading... please wait"; LoadedMSG="DisableUpdates Loaded";
+    progress.innerHTML="DisableUpdates loading... please wait"; LoadedMSG="DisableUpdates Loaded";
     PLfile = "disableupdates.bin.bz2";
     out_jb = "AllPL";
     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_EnableUpdates(){
-    msgs.innerHTML="EnableUpdates loading... please wait"; LoadedMSG="EnableUpdates Loaded";
+    progress.innerHTML="EnableUpdates loading... please wait"; LoadedMSG="EnableUpdates Loaded";
     PLfile = "enableupdates.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_EnableBrowser(){
-    msgs.innerHTML="EnableBrowser loading... please wait"; LoadedMSG="EnableBrowser Loaded";
+    progress.innerHTML="EnableBrowser loading... please wait"; LoadedMSG="EnableBrowser Loaded";
     PLfile = "enablebrowser.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_ExitIDU(){
-    msgs.innerHTML="ExitIDU loading... please wait"; LoadedMSG="ExitIDU Loaded";
+    progress.innerHTML="ExitIDU loading... please wait"; LoadedMSG="ExitIDU Loaded";
     PLfile = "exitidu.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
   
 function load_FTP(){
-    msgs.innerHTML="FTP loading... please wait"; LoadedMSG="FTP Loaded";
+    progress.innerHTML="FTP loading... please wait"; LoadedMSG="FTP Loaded";
     PLfile = "ftp.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
   
 function load_HistoryBlocker(){
-    msgs.innerHTML="HistoryBlocker loading... please wait"; LoadedMSG="HistoryBlocker Loaded";
+    progress.innerHTML="HistoryBlocker loading... please wait"; LoadedMSG="HistoryBlocker Loaded";
     PLfile = "historyblocker.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
   
 function load_RIFRenamer(){
-    msgs.innerHTML="RIFRenamer loading... please wait"; LoadedMSG="RIFRenamer Loaded";
+    progress.innerHTML="RIFRenamer loading... please wait"; LoadedMSG="RIFRenamer Loaded";
     PLfile = "rifrenamer.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
   
 function load_Orbis(){
-    msgs.innerHTML="Orbis-Toolbox loading... please wait"; LoadedMSG="Orbis-Toolbox Loaded";
+    progress.innerHTML="Orbis-Toolbox loading... please wait"; LoadedMSG="Orbis-Toolbox Loaded";
     PLfile = "Orbis-Toolbox-900.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTAAr0(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "gtava0.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTAAr1(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "gtava1.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTAAr2(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "gtava2.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTAAr3(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "gtava3.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
-function load_GTAL(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "Lamance9.bin.bz2";
+function load_Wilde47(){
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    PLfile = "WildeModz-1.47.bin";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_expul(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "LushModz-1.0-9.00.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_expul2(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "LushModz-4.0-9.00.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTABQ(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "BeefQueefMod.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTABQ2(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "BeefQueefMod134.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTABQ3(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "BeefQueefMod138.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
-function load_GTABQ4(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "BeefQueefMod-Unified-147e.bin";
-    out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
-}
-
 function load_GTAVMB(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "gtavmb127.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_GTAVLTS(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "gtavLTS127.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Wilde32(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "WildeModz-1.32.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Wilde33(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "WildeModz-1.33.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Wilde38(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "WildeModz-1.38.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
-function load_Wilde46(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "WildeModz-1.46.bin";
-    out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
-}
-
-function load_Wilde47(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "WildeModz-1.47.bin";
-    out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
-}
-
 function load_Oysters100(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "Oysters1.00.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Oysters113(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "Oysters1.13.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Oysters119(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "Oysters1.19.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Oysters124(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "Oysters1.24.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_Oysters129(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "Oysters1.29.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 
 function load_ToDexE(){
-    msgs.innerHTML="ToDEX Enabling... please wait"; LoadedMSG="ToDex Enabled";
+    progress.innerHTML="ToDEX Enabling... please wait"; LoadedMSG="ToDex Enabled";
     PLfile = "todex-enable.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_ToDexD(){
-    msgs.innerHTML="ToDEX Disabling... please wait"; LoadedMSG="ToDex Disabled";
+    progress.innerHTML="ToDEX Disabling... please wait"; LoadedMSG="ToDex Disabled";
     PLfile = "todex-disable.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_WebRTE(){
-    msgs.innerHTML="WebRTE loading... please wait"; LoadedMSG="WebRTE Loaded";
+    progress.innerHTML="WebRTE loading... please wait"; LoadedMSG="WebRTE Loaded";
     PLfile = "WebRTE.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function load_fan(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     let array = loadFile("fan" +tempC.value+ ".bin.bz2");
     out_jb = "AllPL";
     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function Mloader(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="MiraLoader Loaded. Send payloads to port 9021";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="MiraLoader Loaded. Send payloads to port 9021";
     PLfile = "MiraLoader.bin.bz2";
     out_jb = "AllPL";
     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function Bloader(){
- msgs.innerHTML="Payload loading... please wait";
+ progress.innerHTML="Payload loading... please wait";
  out_jb = "BinLD";
 if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
 
 function JB(){
-    msgs.innerHTML="Jailbreaking... please wait"; LoadedMSG="Jailbreak Done";
+    progress.innerHTML="Jailbreaking... please wait"; LoadedMSG="Jailbreak Done";
     out_jb = "JB";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {allset();}
 }
 
 function load_copych(){
-    msgs.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "CopyCH.bin.bz2";
     out_jb = "AllPL";     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocj();}
 }
@@ -618,120 +831,117 @@ Tools.style.display = "none";
 		}
 </script>
 </head>
-<body>
-<h1 id="msgs" style='margin-top:1%;'>Full Host Payload 9.00fw</h1>
-<br>
-<h1 id=progress style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'>main payload</h1>
+<body style='background-color:#0E0E14'>
+<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;margin-top:1%;'>Full Host Payload 9.00fw</h1>
+<h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status</h1>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GoldHen v2.3 by SISTR0 for PS4 9.00 Fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="goldhen23()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GoldHenV2.3</button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GoldHen v2.4b14 by SISTR0 for PS4 9.00 Fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="goldhen24()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GoldHenV2.4b14</button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_copych()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Cheat Copy </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.2.4 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen224()" > GoldHenV2.2.4</button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.3 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen23()"> GoldHenV2.3</button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.1.2 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen212()"> GoldHenV2.4b14</button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()"> Cheat Copy </button>
 <br><br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Binloader Port 9020 for PS4 9.00 Fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Bloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > BinLoader </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Mira loader Port 9021 for PS4 9.00 Fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Mloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > MiraLoader </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Jailbreak for run Mira for PS4 9.00 Fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="JB()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > JB </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Mira Orbis for PS4 9.00 Fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Mira()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Mira </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()"> BinLoader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()"> MiraLoader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Jailbreak for run Mira for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="JB()"> JB </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Mira Orbis for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mira()"> Mira </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='WebRTE for PS4 9.00 fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_WebRTE()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > WebRTE </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='ps4debug for PS4 9.00 fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_PS4Debug()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Ps4debug </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00 fw'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Orbis()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Orbis Toolbox </button>
-<a href="web.html"><button  onMouseOver="msgs.innerHTML='Web Activator by Sleirsgoevy'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Web Activator</button></a>
+<button id="button-Payload" onMouseOver="progress.innerHTML='WebRTE for PS4 9.00 fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_WebRTE()"> WebRTE </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='ps4debug for PS4 9.00 fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_PS4Debug()"> Ps4debug </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00 fw'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Orbis()"> Orbis Toolbox </button>
+<a href="web.html"><button  onMouseOver="progress.innerHTML='Web Activator by Sleirsgoevy'"; onmouseout="progress.innerHTML='Status'" type="button">Web Activator</button></a>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='A full access FTP server for the PS4'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_FTP()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > FTP </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Move installed games to an external USB drive'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_App2USB()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > App2USB </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='unlocks some debug features available on testkit'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_ToDexE()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > ToDex Enable </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Disable ToDEX'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_ToDexD()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > ToDex Disable </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='A full access FTP server for the PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_FTP()"> FTP </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Move installed games to an external USB drive'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_App2USB()"> App2USB </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='unlocks some debug features available on testkit'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDexE()"> ToDex Enable </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Disable ToDEX'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDexD()"> ToDex Disable </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_DisableUpdates()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' >Disable Updates</button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_EnableUpdates()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Enable Update </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Disable the auto opening of the last page used in the PS4 WebBrowser'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_HistoryBlocker()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > History Blocker </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Enable Browser'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_EnableBrowser()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Enable Browser </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableUpdates()">Disable Updates</button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableUpdates()"> Enable Update </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Disable the auto opening of the last page used in the PS4 WebBrowser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_HistoryBlocker()"> History Blocker </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Enable Browser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableBrowser()"> Enable Browser </button>
 <br>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="btn" onMouseOver="msgs.innerHTML='All Dumper payloads'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="alldumpers(); return false"> Dumper Group</button>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="btn" onMouseOver="msgs.innerHTML='All Linux payloads'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="alllinux(); return false"> Linux Group </button>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="btn" onMouseOver="msgs.innerHTML='All Tools payloads'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="alltools(); return false"> Tools Group </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Dumper payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alldumpers(); return false"> Dumper Group</button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Linux payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alllinux(); return false"> Linux Group </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Tools payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alltools(); return false"> Tools Group </button>
 <br>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' class="btn" onMouseOver="msgs.innerHTML='All Mods Gtav & RDR2 payloads'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="allmods(); return false"> GTAV & RDR2 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Set the desired temperature that the PS4 fan starts'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_fan()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Fan Control </button><select style='font-size:20px;text-align:center;color:black' id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 350px;height: 45px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Mods Gtav & RDR2 payloads'"; onmouseout="progress.innerHTML='Status'" onclick="allmods(); return false"> GTAV & RDR2 Mods Group </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Set the desired temperature that the PS4 fan starts'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_fan()"> Fan Control </button><select style='font-size:20px;text-align:center;color:black' id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
 <br>
 </div>
 <div id=gtav style="text-align:center;display:none">
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' class="btn" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="backall(); return false"> Back to Menu </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Karo Host 5.05 fw'" onclick="backall(); return false"> Back to Menu </button>
 <br><br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV ArabicGuy 1.00 for 900 L1+R1'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAAr0()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV A100 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV ArabicGuy 1.27 by rfoodxmodz  fixed for 900 ==> + [] '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAAr1()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV A127 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV ArabicGuy 1.32 by rfoodxmodz fixed for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAAr2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV A132 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV ArabicGuy 1.33 by rfoodxmodz for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAAr3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV A133 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV ArabicGuy 1.00 by Karo for 900 L1+R1'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTAAr0()"> GTAV A100 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV ArabicGuy 1.27 by rfoodxmodz  fixed by Karo for 900 ==> + [] '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTAAr1()"> GTAV A127 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV ArabicGuy 1.32 by rfoodxmodz fixed by Karo for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTAAr2()"> GTAV A132 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV ArabicGuy 1.33 by rfoodxmodz for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTAAr3()"> GTAV A133 </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV BeefQueefMod 1.33 by GraFfix_221211 for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTABQ()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV BQ </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV BeefQueefMod 1.34 by GraFfix_221211 for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTABQ2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV BQ2 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV BeefQueefMod 1.38 by GraFfix_221211 for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTABQ3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV BQ3 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV BeefQueefMod 1.47 by GraFfix_221211 for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTABQ4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV BQ4 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.33 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTABQ()"> GTAV BQ </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.34 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTABQ2()"> GTAV BQ2 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.38 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTABQ3()"> GTAV BQ3 </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Menu-Base 1.27 Ported for 900 ==> + []'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAVMB()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV MB127 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV LTS 1.27 Ported for 900 ==> + []'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAVLTS()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV LTS127 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mode Menu 1.35 by LushModz for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_expul()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV Ex135 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mode Menu 1.38 V4.0 by LushModz for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_expul2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV Ex138 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Menu-Base 1.27 Ported by Karo for 900 ==> + []'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTAVMB()"> GTAV MB127 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV LTS 1.27 Ported by Karo for 900 ==> + []'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_GTAVLTS()"> GTAV LTS127 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mode Menu 1.35 by LushModz for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_expul()"> GTAV Ex135 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mode Menu 1.38 V4.0 by LushModz for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_expul2()"> GTAV Ex138 </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mod Menu 1.32 by x_WildeModz_x for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Wilde32()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV W132 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mod Menu 1.33 by x_WildeModz_x for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Wilde33()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV W133 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mod Menu 1.38 by x_WildeModz_x for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Wilde38()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV W138 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mod Menu 1.46 by x_WildeModz_x for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Wilde46()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV W146 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Expulsion Mod Menu 1.47 by x_WildeModz_x for 900 '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Wilde47()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > GTAV W147 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.32 v1.1 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Wilde32()"> GTAV W132 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.33 v1.1 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Wilde33()"> GTAV W133 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.38 v1.7 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Wilde38()"> GTAV W138 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.47 v1.7 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Wilde47()">GTAV W147</button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='GTAV Lamance Mod 1.38 v0.9 by david1337hax '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_GTAL()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' >GTAV Lamance</button>
-<br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Red dead redemption 2 mod  menu 1.00 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Oysters100()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > RDR2 V1.00 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Red dead redemption 2 mod  menu 1.13 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Oysters113()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > RDR2 V1.13 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Red dead redemption 2 mod  menu 1.19 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Oysters119()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > RDR2 V1.19 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Red dead redemption 2 mod  menu 1.24 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Oysters124()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > RDR2 V1.24 </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Red dead redemption 2 mod  menu 1.29 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_Oysters129()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > RDR2 V1.29 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.00 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Oysters100()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:red' > RDR2 V1.00 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.13 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Oysters113()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:red' > RDR2 V1.13 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.19 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Oysters119()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:red' > RDR2 V1.19 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.24 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Oysters124()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:red' > RDR2 V1.24 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.29 V1.3.6 by RF0oDxM0Dz (R1 + Square) '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Oysters129()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:red' > RDR2 V1.29 </button>
 <br><br><br></div>
 <div id=Linuxs style="text-align:center;display:none">
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' class="btn" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="backall(); return false"> Back to Menu </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Karo Host 5.05 fw'" onclick="backall(); return false"> Back to Menu </button>
 <br><br>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 1gb by PSXITA'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux1N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux PSXITA 1GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 2gb by PSXITA'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux2N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux PSXITA 2GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 3gb by PSXITA'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux3N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux PSXITA 3GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 4gb by PSXITA'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux4N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux PSXITA 4GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 5gb by PSXITA'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux5N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux PSXITA 5GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 1gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux PSXITA 1GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 2gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux PSXITA 2GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 3gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux PSXITA 3GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 4gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux PSXITA 4GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 5gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5N()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux PSXITA 5GB</button>
 <br>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 1gb by Nazky'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux1()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux 1GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 2gb by Nazky'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux 2GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 3gb by Nazky'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux 3GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 4gb by Nazky'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux 4GB</button>
-<button  onMouseOver="msgs.innerHTML='LinuxLoader 5gb by Nazky'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux5()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Linux 5GB</button>
-<br>
-<button  onMouseOver="msgs.innerHTML='Whos That Southbridge'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="Linux6()" style='width: 300px;height: 50px;font-size:20px;text-align:center;text-shadow: 4px 4px 4px black'>Whos_That_Southbridge</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 1gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux 1GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 2gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux 2GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 3gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux 3GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 4gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux 4GB</button>
+<button  onMouseOver="progress.innerHTML='LinuxLoader 5gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Linux 5GB</button>
+<br><br>
+<button  onMouseOver="progress.innerHTML='Whos That Southbridge'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux6()" style='width: 300px;height: 50px;font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Whos_That_Southbridge</button>
 <br><br><br>
 </div>
 <div id=Tools style="text-align:center;display:none">
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' class="btn" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="backall(); return false"> Back to Menu </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Karo Host 5.05 fw'" onclick="backall(); return false"> Back to Menu </button>
 <br><br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Create a backup of important database files ans User Data'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_BackupDB()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > DB Backup </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Restore a backup of the database files and User Data'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_RestoreDB()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > DB Restore </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Disable IDU Mode'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_ExitIDU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Exit IDU </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Create a backup of important database files ans User Data'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_BackupDB()"> DB Backup </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Restore a backup of the database files and User Data'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_RestoreDB()"> DB Restore </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Disable IDU Mode'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ExitIDU()"> Exit IDU </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Rif Renamer'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_RIFRenamer()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Rif renamer </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='permanentuart'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_permanentuart()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > permanent uart </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='disable aslr'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_DisableASLR()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Disable Aslr </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Rif Renamer'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_RIFRenamer()"> Rif renamer </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='permanentuart'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_permanentuart()"> permanent uart </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='disable aslr'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableASLR()"> Disable Aslr </button>
 <br><br><br>
 </div>
 <div id=Dumpers style="text-align:center;display:none">
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' class="btn" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" onclick="backall(); return false"> Back to Menu </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='Karo Host 5.05 fw'" onclick="backall(); return false"> Back to Menu </button>
 <br><br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='PS4 PKG Backup by Kameleon'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_pkgb()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > PKG Backup </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='PS4 PKG Backup by Kameleon'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_pkgb()"> PKG Backup </button>
+<br><br>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Dump Games only to a USB drive by Leeful'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DumperG()"> Dumper Game </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Dump Games Update only to a USB drive by Leeful'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DumperU()"> Dumper Update </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Dump Merged Games and Update to a USB drive by Leeful'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DumperMGU()"> Dumper MGU </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Dump Seperate Games and Update to a USB drive by Leeful'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DumperSGU()"> Dumper SGU </button>
 <br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Dump Games only to a USB drive by Leeful'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_DumperG()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Dumper Game </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Dump Games Update only to a USB drive by Leeful'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_DumperU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Dumper Update </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Dump Merged Games and Update to a USB drive by Leeful'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_DumperMGU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Dumper MGU </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='Dump Seperate Games and Update to a USB drive by Leeful'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_DumperSGU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Dumper SGU </button>
-<br><br>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='kernel dumper'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_KernelDumper()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Kernel Dumper </button>
-<button id="button-Payload" onMouseOver="msgs.innerHTML='module dumper'"; onmouseout="msgs.innerHTML='Full Host Payload 9.00fw'" class="btn" onclick="load_ModuleDumper()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black' > Module Dumper </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='kernel dumper'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_KernelDumper()"> Kernel Dumper </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='module dumper'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ModuleDumper()"> Module Dumper </button>
+<br><br><br>
 </div>
 <div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
-<span class="credit" >*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS4xploit Team</span >
+<span class="yellow" >*Mod by : Al Amri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Host by : Magnum Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Thanks to : PS4xploit Team</span >
 </div>
 <script>
 const OFFSET_wk_vtable_first_element = 0x104F110;
@@ -1381,7 +1591,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("Insert USB Drive and click OK after You See The Popup Notification.<br>After jailbreak remove USB from PS4.");
+  alert("Insert USB Drive and click OK after You See The Popup Notification, after jailbreak remove usb from PS4");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -1411,7 +1621,7 @@ function kernel() {
         }
         else
         {
-            alert("Failed to trigger exploit kernel heap might be corrupted.<br>Try again or reboot the console.");
+            alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
             p.write8(0, 0);
         }
  };
