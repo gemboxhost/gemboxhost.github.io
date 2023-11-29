@@ -4,9 +4,6 @@ CACHE:
 app-dumper.bin.bz2
 app2usb.bin.bz2
 backupdb.bin.bz2
-BeefQueefMod.bin.bz2
-BeefQueefMod134.bin.bz2
-BeefQueefMod138.bin.bz2
 CopyCH.bin.bz2
 disableaslr.bin.bz2
 disableupdates.bin.bz2
@@ -36,24 +33,16 @@ goldhen_2.4b14.bin
 goldhen_212_900.bin
 gtava0.bin.bz2
 gtava1.bin.bz2
-gtava2.bin.bz2
-gtava3.bin.bz2
-gtavLTS127.bin.bz2
-gtavmb127.bin.bz2
 historyblocker.bin.bz2
 img.jpg
 index.html
 int64b.js
 kerneldumper.bin.bz2
-Lamance9.bin.bz2
-Lamance900.bin.bz2
 LinuxLoader.bin
 LinuxLoader2gb.bin
 LinuxLoader3gb.bin
 LinuxLoader4gb.bin
 LinuxLoader5gb.bin
-LushModz-1.0-9.00.bin.bz2
-LushModz-4.0-9.00.bin.bz2
 malloc.js
 mdumper.bin.bz2
 mira.js
@@ -91,6 +80,7 @@ WebRTE.bin.bz2
 WildeModz-1.32.bin.bz2
 WildeModz-1.33.bin.bz2
 WildeModz-1.38.bin.bz2
+WildeModz-1.46.bin.bz2
 WildeModz-1.47.bin.bz2
 wtsb.bin
 
