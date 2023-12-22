@@ -71,7 +71,7 @@ header{
  color: white;
 }
 .yellow {
- color:yellow;
+ color:#FFD700;
  text-shadow: 4px 4px 4px black;
  font-weight:bold;
  }
@@ -91,10 +91,9 @@ header div{
 	display: ruby-text;
 	margin-top: -1.5em;
 }
-.pointer {cursor: pointer;}
-.yellow {
-  color:yellow;
- }
+.pointer {
+cursor: pointer;
+}
  .hue {
   color:yellow;
   padding:10px;
