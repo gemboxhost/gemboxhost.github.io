@@ -73,7 +73,6 @@ header{
 .yellow {
  color:#FFD700;
  text-shadow: 4px 4px 4px black;
- font-weight:bold;
  }
 .msgs {
 position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;

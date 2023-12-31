@@ -33,28 +33,12 @@ window.mira_blob_2_len = 5144;
 window.mira_blob_2 = malloc(window.mira_blob_2_len);
 write_mem(window.mira_blob_2, payload);}
 </script>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
 </head>
 <body style='background-color:#0E0E14'>
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
-<br><span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:#FFD700;'><a class="button" style="color: green;text-shadow: 4px 4px 4px black;font-size:100%; font-weight: bold;">Pass = <span id=passCounter></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FULL HOST PAYLOAD 6.72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  class="button2" style="color: red;text-shadow: 4px 4px 4px black;font-size:100%; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fail = <span id=failCounter></span> </a>
-<br><br>
+<h1 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:#FFD700;margin-top:1%;'>FULL HOST PAYLOAD 6.72</h1>
+<br>
 <h1 id=msgs2 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status ...</h1>
 <div style="text-align:center"  id="MyItems">
 <div id=all style="text-align:center">
@@ -160,7 +144,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <br><br>
 <br>
 <div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:25px;">
-<span class="yellow" >*MOD by : MAGNUM GAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*THANKS to : ALL DEV PLAYSTATION JAILBREAK</span >
+<span class="yellow" >© Copyright 2023 MagnumGame - Credits to All Dev Playstation Jailbreak</span >
 </div>
 <script>
 for(var i=1; i<=99; i++){var select1 = document.getElementById("fws1"); var option1 = document.createElement("OPTION"); select1.options.add(option1); option1.text = i; option1.value = i;}
