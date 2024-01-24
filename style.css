@@ -12,9 +12,9 @@ html {
 }
 
 h1 {
-    text-shadow: 0.1em 0.1em 0.2em black;
+    text-shadow: 4px 4px 4px black;
     font-size: 25px;
-    color: white;
+    color: #FFD700;
 }
 
 a {
@@ -46,12 +46,13 @@ a {
 }
 
 .yellow {
-  color:#FFD700;
+  color:white;
   text-shadow: 4px 4px 4px black;
  }
 
 .btn {
-    background-color: black;
+    background-color: rgba(0, 50, 100, 0.5);
+	text-shadow: 4px 4px 4px black;
     color: rgb(255, 255, 255);
     width: 225px;
     padding: 10px;
@@ -61,14 +62,14 @@ a {
     margin-bottom: 8px;
     margin-left: 5px;
     margin-right: 5px;
-    border: solid 1px white;
+    border: solid 2px #6e0353;
     transition: 300ms;
     cursor: pointer;
     border-radius: 10px;
 }
 
 .btn:hover {
-    border: solid 1px rgb(0, 100, 255);
+    border: solid 2px #6e0353;
     box-shadow: inset 225px 0px 0px rgb(0, 73, 206);
     animation: ani 1s;
 }
@@ -78,7 +79,7 @@ a {
        box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
        }
     100% {
-       box-shadow: inset 225px 0px 0px rgb(0, 73, 206);
+       box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
        }
 }
 
