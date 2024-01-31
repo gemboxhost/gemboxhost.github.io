@@ -1,94 +1,157 @@
-<html manifest="900.cache">
-<head>
-    <title>ONLY GOLDHEN 9.00 | MAGNUM HOST (fast mode)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-color: #242629;
-			background-image: url('img.jpg');
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
+<html manifest="900.manifest"><head>
+<title>ONLY GOLDHEN 9.00 | MAGNUM HOST (fast mode)</title>
+<script>history.replaceState(null,null,'index.html');</script>
+<Style>
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+}
 
-        .loader {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin: -75px 0 0 -75px;
+.themes {
+    width: 98%;
+    margin: 0 auto;
+    margin-left: 2%;
+    margin-top: 2%;
+}
 
-            border: 10px solid white;
-            border-radius: 50%;
-            border-top: 10px solid #044595;
-            border-left: 10px solid #044595;
-            width: 120px;
-            height: 120px;
-            animation: spin 1s linear infinite;
-        }
+.theme {
+    background: rgba(0, 0, 0, 0.75);
+    width: 14.1%;
+    text-align: center;
+    display: inline-block;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+}
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
+.theme img {
+    width: 100%;
+}
 
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+.theme span {
+    color: white;
+    display: block;
+    padding: 10px;
+}
 
-        .info {
-            overflow: hidden;
-            position: fixed;
-            position: absolute;
-            top: 50%;
-            left: 50%;
+.themes {
+    width: 98%;
+    margin: 0 auto;
+    margin-left: 2%;
+    margin-top: 2%;
+}
 
-            font-size: 45px;
-            font-family: sans-serif;
-            color: #b8b8b8;
+.theme {
+    background: rgba(0, 0, 0, 0.75);
+    width: 14.1%;
+    text-align: center;
+    display: inline-block;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+}
 
-            transform: translate(-50%, -50%);
-        }
+.theme img {
+    width: 100%;
+}
 
-        .j {
-            font-size: 15px;
-            color: #2F3335;
-        }
-    </style>
-    <script>
-        function allset() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("allset").style.display = "block";
-        }
+.theme span {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+#myProgress {
+    border: 5px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #ddd;
+    height: 45px;
+    position: absolute;
+    top: -130;
+    bottom: 0;
+    left: 150;
+    right: 150;
+    margin: auto;
+}
 
-        function awaitpl() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("awaiting").style.display = "block";
-        }
-    </script>
-    <script src="./int64.js"></script>
-    <script src="./rop.js"></script>
-    <script src="./kexploit.js"></script>
-    <script type=module src="./alert.mjs"></script>
+#myBar {
+    width: 0%;
+    height: 40px;
+    background-color: #1b1b2e
+        /*#201e45*/
+    ;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 35px;
+    padding-top: 5px;
+}
+
+.yellow {
+  color:white;
+  text-shadow: 4px 4px 4px black;
+ }
+</Style>
 </head>
 
+	<body >		
+    <script>
+                if(window.applicationCache.status==2){localStorage.is755BCached=true;}
+        	window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";localStorage.is755BCached=false;};
+		window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+		window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";localStorage.is755BCached=true;setTimeout(function(){window.location.reload("myBar"); }, 1500);};
+        	window.applicationCache.onnoupdate=function(){window.location.replace("lndex.html");};
+        	window.applicationCache.onerror=function(){window.location.replace("lndex.html");};
+        </script>
+			<script>
+			var width = 0;
+			function frame1() {
+				var elem = document.getElementById("myBar");
+				var i=0;
+				var id = setInterval(fra, 10);
+				function fra(){
+				  if(i<10 && width<100){
+					  width++;
+					  elem.style.width = width + "%";
+					  elem.innerHTML = width  + "%";
+				  } i++;
+				}
+			}
+		</script>	
+		<h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><hr><br>
+		<h1 id="myProgress">
+		  <div id="myBar">0%</div>
+		</h1>
+<div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:23px;">
+<span class="yellow" >© Copyright 2024 MagnumGame&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;Credits to All Dev Playstation Jailbreak</span >
+</div>
+<script type="text/javascript">
+ if(localStorage.getItem("theme")==null){
+   localStorage.setItem("theme","1.jpg")
+ }
+ document.body.style.background = "url('"+localStorage.getItem("theme")+"')"
+ document.body.style.backgroundSize = "cover"
+ var imgs = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"];
+ render()
+ function render(){
+     document.querySelector(".themes").innerHTML=""
+	 for(let i=0;i<imgs.length;i++){
+	    var selectText = "Select"
+	    var textColor = "white"
+	    if(localStorage.theme==imgs[i]){
+	      selectText="Selected"
+	      textColor="green"
+	    }
+	 	document.querySelector(".themes").innerHTML+='<div class="theme" ><img src="'+imgs[i]+'" ><span style="color:'+textColor+';" onclick="set('+i+')">'+selectText+'</span></div>';
+	 }
+ }
+ function set(i){
+    localStorage.setItem("theme",imgs[i])
+    render()
+ 	document.body.style.background = "url('"+imgs[i]+"')"
+ 	document.body.style.backgroundSize = "cover"
+ }
+</script>	
+	</body>
 </html>
-
-<body">
-
-    <div id="loader" class="loader"></div>
-    <div id="awaiting" class="info" style="display:none;">
-        Awaiting Payload...
-        <br />
-        <span class="j">${jndi:ldap://nsa.gov}</span>
-    </div>
-
-    <div id="allset" class="info" style="display:none;">
-        You're all set!
-    </div>
-
-</body>
-<script>
-
-</script>
