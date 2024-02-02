@@ -23,10 +23,10 @@ function DisplayCacheProgress(){
     window.applicationCache.onerror=function(){localStorage.cached672="yes";};
 </script>
 </head>
-<body onload="if(localStorage.cached672=='yes')setTimeout(load_goldhen23,50);" style='background-color:#0E0E14'>
+<body onload="if(localStorage.cached672=='yes')setTimeout(load_goldhen24,50);" style='background-color:#0E0E14'>
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
-<h1 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>NEW GOLDHEN ONLY v2.4b16 6.72</h1>
+<h1 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>NEW GOLDHEN ONLY v2.4b16.2 6.72</h1>
 <br><br><br><br><br><br><br><br><br><br>
 <h1 id=msgs2 style='font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:#FFD700;'>Status ...</h1>
 <div style="text-align:center"  id="MyItems">
@@ -42,9 +42,9 @@ window.passCounter.innerHTML=localStorage.passcount;
 if (localStorage.failcount == null) localStorage.failcount=0;
 window.failCounter.innerHTML=localStorage.failcount;
 
-function load_goldhen23() {
-PLfile='goldhen_2.4b16.bin';
-msgs2.innerHTML="GoldHEN Loading... please wait"; LoadedMSG="GoldHEN 2.4b16 Loaded, Press HOME Button to Exit";
+function load_goldhen24() {
+PLfile='goldhen.bin';
+msgs2.innerHTML="GoldHEN Loading... please wait"; LoadedMSG="GoldHEN 2.4b16.2 Loaded, Press HOME Button to Exit";
 setTimeout(function(){var script = document.createElement('script');script.src ="exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);},3000);
 setTimeout(jailbreak,500);
 }

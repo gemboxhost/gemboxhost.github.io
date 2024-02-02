@@ -30,7 +30,7 @@ button {
 }
 button:hover {
     border: solid 2px #6e0353;
-    box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
+    box-shadow: inset 245px 0px 0px rgb(0, 73, 206);
     animation: ani 1s;
 }
 }
@@ -39,7 +39,7 @@ button:hover {
        box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
        }
     100% {
-       box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
+       box-shadow: inset 245px 0px 0px rgb(0, 73, 206);
        }
 }
 header{
