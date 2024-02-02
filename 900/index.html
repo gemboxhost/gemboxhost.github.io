@@ -180,7 +180,7 @@ button {
 }
 button:hover {
     border: solid 2px #6e0353;
-    box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
+    box-shadow: inset 245px 0px 0px rgb(0, 73, 206);
     animation: ani 1s;
 }
 }
@@ -189,7 +189,7 @@ button:hover {
        box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
        }
     100% {
-       box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
+       box-shadow: inset 245px 0px 0px rgb(0, 73, 206);
        }
 }
 
@@ -468,42 +468,10 @@ runScript('relocator.js');
 }
 
 
-function goldhen2(){
-    progress.innerHTML="Goldhen 2.0b2 loading... please wait";
-    LoadedMSG="GoldHEN 2.0b2 Loaded";
-    PLfile = "goldhen2b2.bin";
-    out_jb = "Gold";
-    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
-}
-
-function goldhen222(){
-    progress.innerHTML="Goldhen 2.2.2 loading... please wait";
-    LoadedMSG="GoldHEN 2.2.2 Loaded";
-    PLfile = "goldhen_2.2.2_900.bin";
-    out_jb = "Gold";
-    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
-}
-
-function goldhen224(){
-    progress.innerHTML="Goldhen 2.2.4 loading... please wait";
-    LoadedMSG="GoldHEN 2.2.4 Loaded";
-    PLfile = "goldhen_2.2.4_900.bin";
-    out_jb = "Gold";
-    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
-}
-
-function goldhen23(){
-    progress.innerHTML="Goldhen 2.3 loading... please wait";
-    LoadedMSG="GoldHEN 2.3 Loaded";
-    PLfile = "goldhen_2.3_900.bin";
-    out_jb = "Gold";
-    if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
-}
-
-function goldhen212(){
-    progress.innerHTML="Goldhen 2.4b16 loading... please wait";
-    LoadedMSG="GoldHEN 2.4b16 Loaded";
-    PLfile = "goldhen_2.4b16.bin";
+function goldhen24(){
+    progress.innerHTML="Goldhen 2.4b16.2 loading... please wait";
+    LoadedMSG="GoldHEN 2.4b16.2 Loaded";
+    PLfile = "goldhen.bin";
     out_jb = "Gold";
     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 50);} else {load_pocB();}
 }
@@ -842,10 +810,7 @@ Tools.style.display = "none";
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>FULL HOST PAYLOAD 9.00</h1>
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:#FFD700;'>Status ...</h1>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.2.4 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen224()" style='font-size:25px;'> GoldHEN v2.2.4</button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.3 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen23()" style='font-size:25px;'> GoldHEN v2.3</button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.4b16 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen212()" style='font-size:25px;'> GoldHEN v2.4b16</button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_copych()" style='font-size:25px;'> Cheat Copy </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.4b16.2 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen24()" style='font-size:25px;width:245px;'> GoldHen v2.4b16.2</button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="Bloader()"> BinLoader </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="Mloader()"> MiraLoader </button>
@@ -870,6 +835,7 @@ Tools.style.display = "none";
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Dumper payloads'"; onmouseout="progress.innerHTML='Status ...'" onclick="alldumpers(); return false"> Dumper Group</button>
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Linux payloads'"; onmouseout="progress.innerHTML='Status ...'" onclick="alllinux(); return false"> Linux Group </button>
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Tools payloads'"; onmouseout="progress.innerHTML='Status ...'" onclick="alltools(); return false"> Tools Group </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_copych()" style='font-size:20px;'> Cheat Copy </button>
 <br>
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="progress.innerHTML='All Mods Gtav & RDR2 payloads'"; onmouseout="progress.innerHTML='Status ...'" onclick="allmods(); return false"> Rockstar Modz </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Set the desired temperature that the PS4 fan starts'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_fan()"> Fan Control </button><select style='font-size:20px;text-align:center;color:black' id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
