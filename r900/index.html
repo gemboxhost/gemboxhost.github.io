@@ -180,7 +180,7 @@ button {
 }
 button:hover {
     border: solid 2px #6e0353;
-    box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
+    box-shadow: inset 245px 0px 0px rgb(0, 73, 206);
     animation: ani 1s;
 }
 }
@@ -189,7 +189,7 @@ button:hover {
        box-shadow: inset 0px 0px 0px rgb(0, 73, 206);
        }
     100% {
-       box-shadow: inset 230px 0px 0px rgb(0, 73, 206);
+       box-shadow: inset 245px 0px 0px rgb(0, 73, 206);
        }
 }
 
@@ -261,18 +261,10 @@ window.progress.innerHTML="Payload Loaded. Send payloads to port 9021";
 alert("Payload Loaded. Send payloads to port 9021");
 }
 
-function goldhen212(){
-    progress.innerHTML="Goldhen 2.4b16 loading... please wait";
-    LoadedMSG="GoldHEN 2.4b16 Loaded";
-    PLfile = "goldhen_2.4b16.bin";
-    out_jb = "AllPL";
-    load_poc();
-}
-
-function goldhen23(){
-    progress.innerHTML="Goldhen 2.3 loading... please wait";
-    LoadedMSG="GoldHEN 2.3 Loaded";
-    PLfile = "goldhen_2.3_900.bin";
+function goldhen24(){
+    progress.innerHTML="Goldhen 2.4b16.2 loading... please wait";
+    LoadedMSG="GoldHEN 2.4b16.2 Loaded";
+    PLfile = "goldhen.bin";
     out_jb = "AllPL";
     load_poc();
 }
@@ -385,8 +377,7 @@ function load_copych(){
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:#FFD700;'>Loading Jailbreak ... Please Wait</h1>
 <br>
 <div id=all style="text-align:center;display:none">
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.3 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen23()" style='font-size:25px;'> GoldHEN v2.3 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.4b16 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen212()" style='font-size:25px;'> GoldHEN v2.4b16 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.4b16.2 by SISTR0 for PS4 9.00 Fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen24()" style='font-size:25px;width:245px;'> GoldHen v2.4b16.2 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_copych()" style='font-size:25px;'> Cheat Copy </button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='WebRTE for PS4 9.00 fw'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_WebRTE()"> WebRTE </button>
