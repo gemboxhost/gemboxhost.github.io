@@ -584,6 +584,18 @@ function load_GTABQ3(){
     out_jb = "AllPL";     setTimeout(load_pocj, 500);
 }
 
+function load_GTABQ4(){
+    progress.innerHTML="Memuat Mod GTAV v1.46 ... mohon tunggu"; LoadedMSG="Berhasil";
+    setTimeout(function(){ let array = loadFile('BeefQueefMod146.bin.bz2');}, 50);
+    out_jb = "AllPL";     setTimeout(load_pocj, 500);
+}
+
+function load_GTABQ5(){
+    progress.innerHTML="Memuat Mod GTAV v1.47 ... mohon tunggu"; LoadedMSG="Berhasil";
+    setTimeout(function(){ let array = loadFile('BeefQueefMod147.bin.bz2');}, 50);
+    out_jb = "AllPL";     setTimeout(load_pocj, 500);
+}
+
 function load_GTAVMB(){
     progress.innerHTML="Memuat Mod GTAV v1.27 ... mohon tunggu"; LoadedMSG="Berhasil";
     setTimeout(function(){ let array = loadFile('gtavmb127.bin.bz2');}, 50);
@@ -742,7 +754,7 @@ Tools.style.display = "none";
 <body style='background-color:#1A1920'>
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>HOST LENGKAP PSFREE PS4 9.00</h1>
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:#FFD700;'>Memuat Jailbreak terbaru ... Mohon tunggu</h1>
-<div id=all style="text-align:center;display:none">
+<div id=all style="text-align:center;display:yes">
 <button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.4 Beta 16.2 oleh SiSTR0 untuk PS4 9.00'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="goldhen24()" style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;width: 245px;' > GoldHEN Terbaru </button>
 <br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Salin file JSON dan SHN dari USB ke PS4'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Salin Cheat </button>
@@ -782,15 +794,17 @@ Tools.style.display = "none";
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV ArabicGuy 1.32 by rfoodxmodz fixed by Karo for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTAAr2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV A132 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV ArabicGuy 1.33 by rfoodxmodz for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTAAr3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV A133 </button>
 <br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.33 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.34 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ2 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.38 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ3 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Lamance Mod 1.38 v0.9 by david1337hax '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTAL()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV Lamance </button>
-<br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Menu-Base 1.27 Ported by Karo for 900 ==> + []'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTAVMB()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV MB127 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV LTS 1.27 Ported by Karo for 900 ==> + []'"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTAVLTS()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV LTS127 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mode Menu 1.35 by LushModz for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_expul()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV Ex135 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mode Menu 1.38 V4.0 by LushModz for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_expul2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV Ex138 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Lamance Mod 1.38 v0.9 by david1337hax '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTAL()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV Lamance </button>
+<br>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.33 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.34 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ2 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.38 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ3 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.46 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ4 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.47 by GraFfix_221211 for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_GTABQ5()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV BQ5 </button>
 <br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.32 v1.1 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_Wilde32()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV W132 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GTAV Expulsion Mod Menu 1.33 v1.1 by x_WildeModz_x for 900 '"; onmouseout="progress.innerHTML='Status ...'" type="button" onclick="load_Wilde33()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > GTAV W133 </button>
