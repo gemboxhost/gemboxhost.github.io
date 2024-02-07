@@ -1,4 +1,5 @@
-html{}body{background-color:#0E0E14;background:url("img/BG.jpg");background-position:center;background-size:cover;background-attachment:fixed;background-repeat:no-repeat;color:#DDE5EA;font-family:sans-serif;font-size:22px;overflow:hidden;cursor:none;
+html{margin:0px;}
+body{background-color:transparent;color:#DDE5EA;font-family:sans-serif;font-size:22px;overflow:hidden;cursor:none;
 }
 @font-face {font-family:'Icons';font-style:normal;font-weight:900;src: local('Icons'), url(Icons.ttf) format('truetype');
 }/* rgba(40,40,40,.7) */
@@ -52,9 +53,15 @@ background:rgba(40,40,40,.3);color:white;font-size:25px;font-weight:bold;
 border:3px solid #C0BEBE;border-radius:5px;
 padding:4px 14px 6px 14px;opacity:1;
 }
+#aGH{
+position:fixed;left:60px;bottom:10px;
+font-weight:bolder;z-index:1;text-align:left;
+font-size:24px;color:white;text-shadow:-2px 2px #274478;	
+}
 #PassFail{
 position:fixed;right:10px;bottom:10px;
 font-size:18px;font-weight:bold;z-index:1;text-shadow:-1px 1px #646468;text-align:right;
+z-index:901;
 }
 .Info1{
 position:absolute;top:264px;left:75px;font-size:24px;color:white;text-shadow:-2px 2px #274478;
@@ -65,16 +72,16 @@ text-shadow: -2px 2px #274478;
 width:900px;height:300px;color:white;
 }
 #InfoTitle{
-position:relative;top:-55;left:0;
+position:relative;top:0;left:0;
 height:58px;color:white;font-size:42px;font-weight:bolder;overflow:hidden;white-space:nowrap;
 }
 #InfoVerAuth{
-position:relative;top:-55;left:0;
+position:relative;top:0;left:0;
 height:40px;color:white;font-size:24px;font-weight:bold;overflow:hidden;white-space:nowrap;
 }
 #InfoDesc{
-position:relative;top:-55;left:0;
-font-size:19px;overflow:hidden;
+position:relative;top:0;left:0;
+font-size:24px;overflow:hidden;
 }
 .InfoIcon{transition:all 200ms;
 position:relative;top:6px;display:inline-block;background-size:100%;margin:0 10px 0 10px;
@@ -95,22 +102,17 @@ width:0%;height:100%;background-color:white;
 position:fixed;left:0;right:0;top:0;bottom:0;max-width:100%;max-height:100%;margin:auto;	
 width:100%;height:100%;
 background:url("img/BG.jpg");
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-color:#0E0E14;
 opacity:1;display:none;z-index:900;
 }
 .cacheUPDtext {
-position:fixed;left:38%;right:0;top:280px;bottom:0px;max-width:100%;max-height:100%;margin:auto;	
-width:900px;height:400px;
+position:absolute;left:0;top:318px;width:100%;margin:auto;	
+height:400px;
 line-height:30px;align-items:left;
-font-family:sans-serif;font-size:28px;text-align:left;color:white;z-index:901;text-shadow: -2px 2px #274478;
+font-family:sans-serif;font-size:28px;text-align:center;color:white;z-index:901;text-shadow: -2px 2px #274478;
 }
 *:focus{outline:0;
 }
-extra{position:absolute;Right:10px;top:6px;font-size:22%;margin-top:37%;font-family:sans-serif;
+extra{position:absolute;Right:10px;top:3px;font-size:22%;margin-top:37%;font-family:sans-serif;
 }
 img{width:100%;-webkit-filter: drop-shadow(-3px 3px 5px black);
 }
@@ -180,7 +182,7 @@ animation-duration:6s;
 #PopIcon {
 position:absolute;left:85px;top:50%;width:60px;height:60px; 
 transform: translateY(-50%);
-background:url("img/PopUp.png");
+/* background:url("img/PopUp.png"); */
 }
 #PopTitle {
 padding:10px 0 6px 0;margin-left:160px; margin-right:32px; 
