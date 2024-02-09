@@ -1,0 +1,36 @@
+<html manifest="leeful900v5b.cache">
+<head>
+<title>HOST OTOMATIS GOLDHEN PS4 9.00 by LEEFUL | MAGNUM HOST</title>
+<style>
+body{
+background-image: url('img.jpg');
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+color:white;
+font-size:28px;
+text-align:center;
+margin:0;
+overflow:hidden;
+}
+
+.info{
+position:relative;
+top:45%;
+}
+</style>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Memasang Offline Cache ... " + Percent + "%"};
+function DisplayCacheProgress(){
+setTimeout(function(){msgs.innerHTML="Cache berhasil dipasang. Restart PS4 & buka lagi Browser ini";},2000);
+setTimeout(function(){location.reload();},3000);
+}
+window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+</head>
+<body style=overflow:hidden>
+<div id=msgs class=info style='-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></div>
+</body>
+</html>

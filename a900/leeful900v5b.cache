@@ -1,15 +1,15 @@
 CACHE MANIFEST 
+# Leeful Auto v5b
 
-CACHE: 
 alert.mjs
+btn.css
+cache.html
 config.mjs
+exploit.js
 exploit.mjs
-goldhen.bin
+img.jpg
 index.html
-int64.js
-kexploit.js
-lndex.html
-rop.js
+pl_goldhenbeta.bin
 module\chain.mjs
 module\constants.mjs
 module\int64.mjs
@@ -18,6 +18,3 @@ module\memtools.mjs
 module\offset.mjs
 module\rw.mjs
 module\utils.mjs
-
-NETWORK: 
-* 
