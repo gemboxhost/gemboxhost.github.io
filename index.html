@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html><head>
-<title>MAGNUM HOST</title>
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magnum Host - Updating</title>
+    <style>
+        *{
+            transition: all 0.6s;
+        }
+        html {
+            height: 100%;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            color: #888;
+            margin: 0;
+        }
+        #main{
+            display: table;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .fof{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .fof h1{
+            font-size: 50px;
+            display: inline-block;
+            padding-right: 12px;
+            animation: type .5s alternate infinite;
+        }
+        @keyframes type{
+            from{box-shadow: inset -3px 0px 0px #888;}
+            to{box-shadow: inset -3px 0px 0px transparent;}
+        }
+        .subText {
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;margin-top:1%;'>MAGNUM HOST</h1>
-<br>
-<div id="menu">
-<h1 id="msgs">Pilih Konsol Anda ...</h1>
-<a href="hen490/index.html"><button class="btn" onmouseover="msgs.innerHTML='HEN Official Installer 4.88-4.90 hfw'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS3 HEN Official </button></a>
-<a href="hen490mod/index.html"><button class="btn" onmouseover="msgs.innerHTML='HEN Unofficial Installer 4.82-4.90 hfw'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS3 HEN RusMod </button></a>
-<a href="flash490/index.html"><button class="btn" onmouseover="msgs.innerHTML='Flash/Downgrade PS3 HFW 4.90.1'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS3 Downgrade </button></a>
-<br>
-<a href="a505/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Otomatis 5.05 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 5.05 A </button></a>
-<a href="m505/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Lengkap 5.05 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 5.05 L </button></a>
-<a href="p505/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host PS-Phwoar! 5.05 GoldHEN v2.4b14'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS-Phwoar! 5.05 </button></a>
-<br>
-<a href="a672/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Otomatis 6.72 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 6.72 A </button></a>
-<a href="r672/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Ringan 6.72 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 6.72 R </button></a>
-<a href="m672/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Lengkap 6.72 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 6.72 L </button></a>
-<a href="p672/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host PS-Phive! 6.72 GoldHEN v2.4b14'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS-Phive! 6.72 </button></a>
-<br>
-<a href="a900l/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Khusus GoldHEN v2.4b16.2 9.00 [Method Leeful]'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 9.00 A </button></a>
-<a href="a900k/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Khusus GoldHEN v2.4b16.2 9.00 [Method Karo]'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 9.00 M </button></a>
-<br>
-<a href="r900/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Ringan 9.00 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 9.00 R </button></a>
-<a href="m900/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host Lengkap 9.00 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS4 9.00 L </button></a>
-<a href="p900/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host PS-Phive! 9.00 GoldHEN v2.4b16.2'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS-Phive! 9.00 </button></a>
-<br>
-<a href="ps5jb/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS5 3.xx - 4.xx etaHEN-1.4B'" onmouseout="msgs.innerHTML='Pilih Konsol Anda ...'"> PS5 3.xx - 4.xx FW </button></a>
-</div>
-<div style="text-align:center;position:fixed;left:0;bottom:20px;width:100%;font-size:23px;">
-<span class="credit" >© Hak Cipta 2024 MagnumGame&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;Terima kasih untuk semua Dev Jailbreak</span >
+<div id="main">
+    <div class="fof">
+        <h1>We are updating Magnum Host</h1>
+        <div class="subText">Please try again after few minutes</div>
+    </div>
 </div>
 </body>
 </html>
