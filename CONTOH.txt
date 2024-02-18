@@ -1,0 +1,68 @@
+
+button{
+width:388px;
+margin:5px 3px 5px 3px;
+padding:0px;
+border:2px solid #839ACA;
+border-radius:5px;
+text-align:left;
+color:white;
+outline:none;
+background-color:#062778;
+}
+button:hover{
+cursor:pointer;
+background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(14,34,87,1)35%);
+}
+.butIMG{
+display:inline-block;
+margin:-0px;
+border-right:3px solid #839ACA;
+outline:none;
+cursor:pointer;
+}
+.butIMG img{
+width:70px;
+height:70px;
+padding:5px 5px 2px 5px;
+cursor:pointer;
+}
+.butTXT{
+float:right;
+text-align:center;
+width:299px;
+font-size:28px;
+margin:22px 0 0 0;
+cursor:pointer;
+}
+.msgs{
+background-color:#062778;
+height:40px;
+border:2px solid #839ACA;
+font-size:30px;
+margin:0;
+padding:5px 0 5px 0;
+}
+.bottopmsg{
+text-align:center;
+display:block;
+position:fixed;
+bottom:0px;
+width:1536px;
+height:43px;
+font-size:28px;
+padding:5px 0 1px 0;
+}
+
+<button onclick="PAYLOAD()" onMouseOver="progress.innerHTML='DESKRIPSI'" onmouseout="progress.innerHTML='JUDUL'">
+<div class=butIMG><img src="img/GAMBAR.png"></div><div class=butTXT>JUDUL</div></button>
+<button onclick="PAYLOAD()" onMouseOver="progress.innerHTML='DESKRIPSI'" onmouseout="progress.innerHTML='JUDUL'">
+<div class=butIMG><img src="img/GAMBAR.png"></div><div class=butTXT>JUDUL</div></button>
+<button onclick="PAYLOAD()" onMouseOver="progress.innerHTML='DESKRIPSI'" onmouseout="progress.innerHTML='JUDUL'">
+<div class=butIMG><img src="img/GAMBAR.png"></div><div class=butTXT>JUDUL</div></button>
+
+
+
+
+
+

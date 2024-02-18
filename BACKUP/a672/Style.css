@@ -1,15 +1,10 @@
 html, body{
-background-image: url('img.jpg');
-background-size:cover;
-background-position: center;
-background-attachment: fixed;
-background-repeat: no-repeat;
 margin:auto;
-font-family:sans-serif;
 font-size:20px;
 font-weight:lighter;
-text-align:left;
+text-align:center;
 color:#FFFFFF;
+background-size:cover;
 }
  button {
             
@@ -70,29 +65,34 @@ header{
  font-size:28px;
  color: white;
 }
-.credit {
-  color:white;
-  text-shadow: 4px 4px 4px black;
- }
-.msgs {
-position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
-width:900;
-height:30;
-top:0;
-bottom:100;
-font-size:32px;
+.msgs{
+background-color:#062778;
+height:40px;
+border:2px solid #839ACA;
+font-size:28px;
+margin:0;
+padding:5px 0 5px 0;
+
+}
+.bottopmsg{
 text-align:center;
-color: yellow;
-text-shadow: 4px 4px 4px black;
+display:block;
+position:fixed;
+bottom:0px;
+width:100%;
+height:43px;
+font-size:26px;
+padding:5px 0 1px 0;
 }
 header div{
 	height: 100%;
 	display: ruby-text;
 	margin-top: -1.5em;
 }
-.pointer {
-cursor: pointer;
-}
+.pointer {cursor: pointer;}
+.yellow {
+  color:yellow;
+ }
  .hue {
   color:yellow;
   padding:10px;
@@ -469,12 +469,7 @@ width:0%;height:100%;background-color:green;
 .cacheUPDbg {transition:opacity 1000ms;
 position:fixed;left:0;right:0;top:0;bottom:0;max-width:100%;max-height:100%;margin:auto;	
 width:100%;height:100%;
-background-image: url('img.jpg');
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-color:#0E0E14;
+background-color:#1A1920;
 opacity:1;display:none;z-index:900;
 }
 .cacheUPD {
@@ -517,16 +512,10 @@ font-family:sans-serif;font-size:32px;text-shadow: 4px 4px 4px black;text-align:
 }
 #msgs2 {
  font-weight:bold;
- text-shadow: 4px 4px 4px black;
-
  font-size:17px;
 }
 .pointer {cursor: pointer;}
 
-#msgs {
-text-shadow: 4px 4px 4px black;
- font-size:32px;
-}
 #done {
 text-shadow: 4px 4px 4px black;
 
@@ -536,3 +525,7 @@ text-shadow: 4px 4px 4px black;
 text-shadow: 4px 4px 4px black;
  font-size:32px;
 }
+.credit {
+  color:white;
+  font-weight: normal;
+ }
