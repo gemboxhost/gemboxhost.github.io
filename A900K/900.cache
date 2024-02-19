@@ -1,9 +1,8 @@
 CACHE MANIFEST 
+# v2.5.5 Self-Host 
 
-CACHE: 
 alert.mjs
 cache.html
-Cache.manifest
 config.mjs
 exploit.mjs
 goldhen.bin
@@ -19,8 +18,3 @@ module\memtools.mjs
 module\offset.mjs
 module\rw.mjs
 module\utils.mjs
-
-NETWORK: 
-* 
-
-# 2024-02-08 14:22:30
