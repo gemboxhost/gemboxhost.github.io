@@ -1,18 +1,17 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <script src="ps3hen_v322.js"></script>
 <meta charset="UTF-8"> 
-<title>PS3 HEN Official | Magnum Game</title>
+<title>PS3 HEN Auto Installer | Magnum Host</title>
 <script>
 function downloadhen()
 {
-	window.location.href = '/hen490/' + fwVersion + '/PS3HEN.p3t';
+	window.location.href = '/A490a/' + fwVersion + '/PS3HEN.p3t';
 }
 function downloadhenD()
 {
-	window.location.href = '/hen490/' + fwVersion + 'D/PS3HEN.p3t';
+	window.location.href = '/A490a/' + fwVersion + 'D/PS3HEN.p3t';
 }
 
 function initROP(init)
@@ -121,7 +120,7 @@ function initROP(init)
 function triggerX()
 {
 		clearLogEntry();
-		showResult(hr+"<h2><b><span style='color:#FFFFFF;'>Installing HEN...</span></b></h2>");
+		showResult(hr+"<h2><b><span style='color:#000000;'>Installing HEN...</span></b></h2>");
 		disable_all();
 		setTimeout(trigger,1000,jump_1_addr);
 		setTimeout(rop_exit_hen,5000,hr+"<h1><b><font color=%22386E38%22>HEN is successfully installed</font></b></h1>","<h1><b><font color='red'>HEN Failure! Restart PS3 and retry!</font></b></h1>");
@@ -129,18 +128,18 @@ function triggerX()
 }
 </script>
 </head>
-	<body id="bodyId" style="background: linear-gradient(to bottom right, #063FAB, #01258A);background-attachment: fixed;color:#FFFFFF;" onload="javascript:downloadhen()">
-	<div id="headerId" style="color:#FFFFFF">
-	<h1>PS3 HEN Official | Magnum Host</h1>
-	<span style="color:#FFFFFF">Many thanks to xerpi for porting the memory leak exploit to ps3, zecoxao & Joonie for their early & renewed support, mysis for documenting vsh/lv2, SSL for his regular & precious advice, kakaroto for the PS3 IDA tools, naherwert for scetool, Rebug Team for producing/updating the only CFW adequate to develop this work & Cobra team for sharing their CobraUSB source, the psdevwiki team of course, STLcardsWS for his long standing contribution & ever constant support.<br>We also wish to thank all the ps3 community hackers/devs, past & present, who directly or indirectly helped us put this project together, you know who you are...</span><hr>
-	<h3>Only Supports CEX 4.88 - 4.90 HFW Firmware</h3>
-	<span style="color:#FFFFFF"><h3>INFO: If HEN is already installed, this will act as an Enabler</font></h3>
-	<span style="color:#FFFFFF"><h3>Instructions: Click the "Auto Install HEN" button. Wait.</font></h3>
+	<body id="bodyId" style="background-color:#FFFFFF" onload="javascript:downloadhen()">
+	<div id="headerId" style="color:#CC2010">
+	<h1>PS3 HEN Auto Installer | Magnum Game</h1>
+	<span style="color:#000000">Many thanks to xerpi for porting the memory leak exploit to ps3, zecoxao & Joonie for their early & renewed support, mysis for documenting vsh/lv2, SSL for his regular & precious advice, kakaroto for the PS3 IDA tools, naherwert for scetool, Rebug Team for producing/updating the only CFW adequate to develop this work & Cobra team for sharing their CobraUSB source, the psdevwiki team of course, STLcardsWS for his long standing contribution & ever constant support.<br>We also wish to thank all the ps3 community hackers/devs, past & present, who directly or indirectly helped us put this project together, you know who you are...</span><hr>
+	<h3>Supports CEX 4.88 - 4.90 HFW Firmware</h3>
+	<span style="color:#0055AA"><h3>INFO: If HEN is already installed, this will act as an Enabler</font></h3>
+	<span style="color:#222222"><h3>Instructions: Click the "Auto Install HEN" button. Wait.</font></h3>
 	<span style="color:#FF1122"><h3>* If initialization fails, set Home Page to about:blank and bookmark this page or return from history. Start browser again, load this page directly, and try again *</font></h3>
 	</div><hr>
 	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Auto Install HEN</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/> * If you check the DEX Mode box and do not get an alert, reload browser or refresh page, or enabling HEN will freeze!</span></p>
 	<p><button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
-	<div id="result" style="color:#FFFFFF"></div><br>
+	<div id="result" style="color:#CC2010"></div><br>
 	<div id="log"></div>
 	<div id="exploit" ></div>
 	<div id="trigger"></div>
