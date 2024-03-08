@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html style="height:100%">
+<html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<title> 404 Not Found
-</title></head>
-<body style="color: #fff; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: rgb(14, 14, 20);">
-<div style="height:auto; min-height:100%; ">     <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
-        <h1 style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">404</h1>
-<h2 style="margin-top:20px;font-size: 30px;">Tak ada apa pun di sini!
-</h2>
-<p>Maaf, Host yang Anda cari di Web ini mungkin sedang di Perbaiki.. Segera hubungi Admin!</p>
-</div></div></body></html>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THIS IS NOT 404 ERROR!</title>
+<style type="text/css">
+ body {
+ margin:0;
+ padding:0;
+ background:#032a69;
+ text-align:center;
+ direction:rtl;
+ }
+ .text {
+  width:85%;
+  height:40%;
+  font-size:160%;
+  margin-right:8%;
+  padding:10px;
+  background:#FFF59D;
+  font-weight:900;
+ }
+ .text p{
+  text-align:justify;
+  font-size:135%;
+  font-weight:500;
+ }
+ 
+ @media (max-width: 767px) {
+  .text{
+  font-size:80%;
+  font-family: sans-serif;
+  }
+  .text p{
+  font-size:120%;
+  }
+ }
+</style>
+</head>
+<body>
+ <div class="text" >
+  <h1>MAGNUM HOST<br>PINDAH DOMAIN<br><br>Halaman ini akan dialihkan secara otomatis<br><br><span id="num" >10</span></h1><br>
+   klik <a href="https://magnumz.my.id/" > disini</a>&nbsp;jika Anda tidak dialihkan ke halaman .my.id
+ </div>
+ <script type="text/javascript">
+ var num = 10;
+ function change(){
+  document.getElementById("num").innerHTML = num;
+  num--;
+  if(document.getElementById("num").innerHTML=="0"){
+  clearInterval(inter);
+  window.location.assign("https://magnumz.my.id/");
+  }
+ }
+ var inter= setInterval(change,1000);
+  
+ </script>
+</body>
+</html>
